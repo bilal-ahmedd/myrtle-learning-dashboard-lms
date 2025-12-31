@@ -1,0 +1,1332 @@
+.mld-account-f-row .mld-account-wrapper {
+    align-items: flex-start !important;
+}
+.mld-account-inner-wrapper .mld-account-wrapper,
+.mld-account-inner-wrapper .mld-parent-account-wrapper,
+.mld-password-reset-fields,
+.mld-upload-policies-cont .mld-user-pdf {
+    display: flex;
+    align-items: end;
+}
+.mld-password-reset-wrapper{
+    background-color: #fff;
+    border-radius: 12px;
+    margin-top: 10px;
+    padding: 22px 0;
+}
+.mld-teacher-inner-wrapper input {
+    width: unset !important;
+    border-radius: unset !important;
+    border: unset !important;
+    height: unset !important;
+}
+.e-con>.e-con-inner>.elementor-widget>.elementor-widget-container {
+  height: auto !important;
+}
+.mld-new-form-uploader {
+    cursor: pointer;
+}
+.mld-new-form-uploader:hover {
+    text-decoration: underline;
+    color: #18440a;
+}
+.mld-pdf-name,
+.mld-terms-condition-header,
+.mld-team-title,
+.mld-social-icons,
+.mld-terms-condition-footer {
+  text-align: center;
+}
+.mld-team-title,
+.mld-social-icons,
+.mld-terms-condition-footer a{
+  color: #18440a !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+}
+.mld-social-icons img {
+  margin: 20px; 
+}
+.mld-terms-condition-header {
+  margin-bottom: 50px;
+}
+.mld-terms-condition-header img {
+  width: 50%;
+}
+.mld-term-condition-title {
+  margin-bottom: 10px;
+}
+.mld-account-inner-wrapper .mld-account-f-row,
+.mld-account-inner-wrapper .mld-parent-account-wrapper,
+.mld-subject-details-wrapper,
+.mld-footer-wrapper,
+.mld-parent-meeting-wrapper,
+.mld-password-reset-wrapper {
+    background-color: #f7f7f7;
+    padding: 22px 0;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+.mld-account-inner-wrapper .mld-parent-account-wrapper {
+    margin-top: 10px;
+}
+.mld-account-inner-wrapper {
+   width: 100%;
+   margin: auto;
+}
+.mld-account-inner-wrapper input {
+    width: 100%;
+}
+.mld-account-wrapper .mld-account-input-wrapper,
+.mld-account-parent-inner-wrap,
+.mld-password-reset-fields .mld-account-input-wrapper,
+.mld-security-setting-button .mld-account-input-wrapper {
+    width: 33%;
+}
+.mld-account-wrapper,
+.mld-parent-account-wrapper {
+    width: 100%;
+    padding: 10px;
+}
+.mld-account-parent-inner-wrap {
+    padding: 0 1% !important;
+}
+.mld-account-input-wrapper {
+   padding: 0 0.5% !important;
+}
+.mld-account-parent-inner-wrap .mld-account-input-wrapper {
+    padding: unset !important;
+}
+.mld-account-inner-wrapper input {
+    height: 48px;
+    border-radius: 12px;
+    border-color: #18440a;
+    border: 1px solid #18440a;
+}
+.mld-account-inner-wrapper .mld-input-title {
+    color: #888888;
+    font-weight: 600;
+ }
+ .mld-footer-wrapper .mld-save-changes {
+    margin-top: 18px;
+    width: 100%;
+    text-align: right;
+ }
+ .mld-footer-wrapper .mld-user-pdf a {
+    width: 25%;
+ }
+ .mld-footer-wrapper .mld-save-changes button,
+ .mld-invince-statement {
+    border-radius: 12px;
+    background: #ffb307;
+    font-weight: 600;
+    color: #18440a;
+    margin-top: 10px;
+ }
+  .mld-footer-wrapper .mld-save-changes button:hover,
+  .mld-invince-statement:hover {
+    background: #ffb307 !important;
+    color: #18440a !important;
+ }
+ .mld-files-main-wrapper {
+ 	  width: 100%;
+    margin: 10px auto;
+    padding-left: 20px;
+ }
+ .mld-title-hidden,
+ .mld-wrapper-hidden {
+   visibility: hidden;
+ }
+ .mld-account-inner-wrapper input[type="button"],
+ .mld-invince-upload,
+ .mld-upload-files-wrapper .mld-upload-files button,
+ .mld-user-profile-wrapper .mld-persobal-btn button,
+ .mld-checklist,
+ .mld-parent-meeting-wrapper button {
+    background-color: #18440a;
+    color: #ffffff !important;
+    font-weight: 600;
+    border-radius: 12px;
+ }
+ .mld-account-submit {
+  margin-top: 20px;
+ }
+ .mld-parent-meeting-wrapper button {
+    margin: 22px;
+ }
+ .mld-meeting-textarea {
+   margin: 0 20px;
+ }
+ .mld-meeting-textarea textarea {
+    border-radius: 12px;
+ }
+ .mld-account-inner-wrapper input[type="button"]:hover,
+ .mld-invince-upload,
+ .mld-upload-files-wrapper .mld-upload-files button,
+ .mld-user-profile-wrapper .mld-persobal-btn button {
+    background-color: #18440a !important;
+    color: #ffffff !important;
+ }
+ .mld-subject-details-inner-wrapper input {
+    width: 28%;
+ }
+ .mld-subject-details-dropdown,
+ .mld-user-profile-wrapper {
+    display: block;
+    width: 100%;
+    padding: 0 1%;
+ }
+ .mld-subject-details-dropdown select{
+    width: 28%;
+    margin-top: 14px;
+    border-radius: 12px;
+    border-color: #18440a;
+ }
+ .mld-clear-both {
+    clear: both;
+ }
+ .mld-upload-files-wrapper .mld-upload-files,
+ .mld-user-profile-wrapper .mld-user-profile,
+ .mld-policies-main-wrapper .mld-policies-go-back {
+    width: 50%;
+    float: right;
+ }
+ .mld-upload-files-wrapper .mld-upload-files,
+ .mld-user-profile-wrapper .mld-persobal-btn,
+ .mld-policies-main-wrapper .mld-policies-btn {
+    width: 50%;
+    float: left;
+ }
+ .mld-policies-go-back,
+ .mld-update-pass-btn {
+    cursor: pointer;
+ }
+ .mld-policies-main-wrapper {
+    width: 87%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 12px;
+ }
+ .mld-checklist {
+  padding: 13px 10px;
+ }
+ .mld-policies-main-wrapper .mld-policies-title {
+    padding: 10px 0;
+ }
+ .mld-policies-main-wrapper .mld-policies-go-back {
+    padding: 15px 0;
+    text-align: right;
+    font-weight: 800;
+ }
+ .mld-policies-main-wrapper .mld-policies-go-back-span {
+    vertical-align: middle;
+    border: 1px solid;
+    border-radius: 50px;
+ }
+ .mld-policies-main-wrapper .mld-policies-go-back-text {
+    text-decoration: underline;
+ }
+ .mld-policies-main-wrapper {
+    display: none;
+ }
+ .mld-password-flield-wrapper {
+    padding-top: 60px;
+ }
+ .mld-password-flield-wrapper .mld-update-pass-btn {
+    width: 50%;
+    background-color: #18440a;
+    border-radius: 12px;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+ }
+ .mld-password-flield-wrapper .mld-old-fields-wrapper,
+ .mld-password-flield-wrapper .mld-new-fields-wrapper {
+   margin-bottom: 15px;
+ }
+ .mld-reset-close {
+   float: right !important;
+ }
+ .mld-pass-error-message {
+   padding: 15px;
+ }
+ .mld-user-profile-wrapper .mld-user-profile {
+   position: relative;
+ }
+ .mld-user-profile-wrapper .mld-user-profile img {
+   border-radius: 50px;
+ }
+ .mld-user-profile-wrapper .mld-edit-profile {
+    position: absolute;
+    top: 50px;
+    left: 67px;
+    cursor: pointer;
+ }
+ .mld-user-profile-wrapper .mld-edit-profile span {
+   font-size: 32px;
+ }
+ .mld-header-avatar img,
+ .mld-user-profile-wrapper .mld-user-profile .mld-main-avatar img {
+   width: 80px;
+   height: 80px;
+   border: 1px solid #18440a;
+ }
+ .mld-user-pdf img {
+    width: 77%; 
+    height: 185px !important;
+    border-radius: 12px !important;
+    margin-right: 10px !important;
+    margin-bottom: 10px !important;
+ }
+ .mld-pdf-wrapper img {
+    padding: 20px;
+    background: #335749;
+ }
+ .mld-user-pdf {
+   padding: 20px 0;
+ }
+ .mld-policies-btn button,
+ .mld-upload-polici button {
+   background-color: #18440a !important;
+   font-weight: 600 !important;
+   color: white !important;
+   border-radius: 12px !important;
+ }
+ .mld-policies-btn button,
+ .mld-upload-polici button {
+   background-color: #18440a !important;
+   color: white !important;
+ }
+.mld-subject-details-dropdown select {
+   background-image: none !important;
+   -webkit-appearance: menulist !important;
+}
+.mld-delete-pdf img {
+   height: 20px !important;
+   width: 20px !important;
+   cursor: pointer;
+   float: right;
+}
+.mld-delete-pdf input {
+   display: none;
+   border-radius: 12px !important;
+   background-color: #18440a !important;
+   color: #ffffff !important;
+   font-weight: 600 !important;
+} 
+.mld-subject-details-wrapper .mld-tag-button {
+   width: unset;
+   background: #e4e4e4 !important;
+   border-color: #e4e4e4 !important;
+   color: #18440a !important;
+   font-weight: 600;
+   border-radius: 12px !important;
+   margin: 10px;
+}
+.mld-subject-tag .mld-tag-button:hover {
+   background: #e4e4e4 !important;
+}
+.mld-pdf-main-wrapper {
+   position: relative;
+}
+.mld-pdf-main-wrapper .mld-delete-pdf {
+   position: absolute;
+}
+.mld-pdf-main-wrapper .mld-delete-pdf {
+  right: -10px;
+  top: 43px;
+ }
+ .mld-edit-profile .mld-edit-icon {
+   width: 30px !important;
+   height: 30px !important;
+ }
+ .mld-subject-details-inner-wrapper .mld-account-input-wrapper {
+   float: left;
+   width: 30%;
+ }
+ .mld-subject-details-inner-wrapper .mld-tags-wrapper {
+   float: right;
+   width: 70%;
+ }
+ .mld-subject-details-wrapper input {
+   width: 100%;
+ }
+ .mld-tags-wrapper {
+   margin-top: 22px;
+ }
+ .mld-subject-details-inner-wrapper input {
+   padding: unset;
+ }
+ .mld-remove-tags {
+   margin-left: -32px;
+   margin-top: 6px;
+   color: red;
+   cursor: pointer;
+ }
+ .mld-delete-user-pdf {
+   display: flex;
+   flex-wrap: wrap;
+ } 
+ .mld-user-pdf.mld-delete-user-pdf {
+   width: 100%;
+ }
+ .mld-header-title,
+ .mld-update-pass-btn {
+   font-family: "Montserrat", Sans-serif;
+ }
+ .mld-password-reset-wrapper {
+   padding: 1.5% 0.7%;
+ }
+ .mld-subject-details-wrapper {
+   padding: 10px 0.5%;
+ }
+ .mld-footer-wrapper {
+   padding: 1%;
+ }
+ .mld-input-content textarea {
+   border: 1px solid #18440a;
+   border-radius: 12px;
+   resize: none;
+ }
+ .mld-tags-wrapper .mld-delete-subject,
+ .mld-tags-wrapper {
+   display: flex;
+ }
+ .mld-tags-wrapper {
+   flex-wrap: wrap;
+ }
+ .mld-tags-wrapper .mld-tag-button {
+   padding: 4px 35px;
+}
+.mld-tags-wrapper .mld-tag-button {
+   position: relative;
+}
+.mld-tag-button .mld-delete-pdf {
+   position: absolute;
+   right: 0;
+   top: 9px;
+}
+.mld-tag-delete-text {
+   font-size: 14px !important;
+   padding: 4px 15px !important;
+   height: 26px !important;
+   margin-top: 5px !important;
+}
+.mld-subject-details-dropdown select {
+   width: 100%;
+}
+.mld-password-reset-wrapper {
+   margin-bottom: 10px;
+}
+.mld-notification-section {
+   background-color: #FBFBFB !important;
+}
+ /**
+  * new design css
+  */
+ .mld-single-pdf-wrapper,
+ .mld-policies-types-wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   width: 100%;
+ }
+ .mld-policies-types-wrapper .mld-add-policy-wrapper,
+ .mld-policies-types-wrapper .mld-main-policy-wrapper {
+   width: 30%;
+   box-shadow: 5px 5px 10px #8883;
+   padding: 20px;
+   border-radius: 12px;
+   margin: 3.33% 3.33% 3.33% 0;
+ }
+ .mld-policies-types-wrapper .mld-add-policy-wrapper {
+ 	height: 32em;
+ }
+ .mld-add-policy-wrapper .add-category-content {
+    border-radius: 50%;
+    width: 112px;
+    height: 108px;
+    padding-top: 23px;
+    margin: 60% auto;
+    box-shadow: 5px 5px 10px #88888873;
+    font-weight: 600;
+ }
+ .category-input-field { 
+    border: 2px solid #e4e4e4;
+    border-radius: 12px;
+    margin-bottom: 12px;
+ }
+ .add-category-button {
+ 	border-radius: 12px;
+ 	background: #ffb207;
+ 	color: white !important;
+ 	font-weight: 600 !important;
+ }
+ .add-category-button:hover {
+ 	background: #ffb207 !important;
+ 	color: white !important;	
+ }
+ .add-category-button,
+ .category-input-field {
+ 	width: 100%;
+ }
+ .mld-single-pdf-wrapper .mld-single-pdf-img {
+   width: 30%;
+ }
+ .mld-single-pdf-wrapper .mld-single-pdf-img img {
+  border-radius: 12px;
+ }
+ .mld-single-pdf-wrapper .mld-single-pdf-title {
+   width: 60%;
+   overflow: hidden;
+   margin-top: 10px;
+   padding-left: 10px; 
+   font-size: 18px;
+   font-weight: 600;
+   color: #18440a;
+ }
+ .mld-single-pdf-wrapper .mld-single-pdf-dele-option {
+   width: 10%;
+   margin-top: 15px;
+ }
+ .mld-single-pdf-wrapper .mld-single-pdf-dele-option img {
+   float: right;
+ }
+ .mld-policy-search-wrapper {
+   width: 100%;
+   position: relative;
+ }
+ .mld-policy-search-wrapper span {
+    position: absolute;
+    right: 26px;
+    top: 14px;
+    font-size: 36px;
+    color: #18440a;
+ }
+ .mld-policy-search-wrapper input {
+    float: right;
+    width: 300px;
+    border: unset;
+    background: #e4e4e473;
+    height: 65px;
+    border-radius: 12px;
+ }
+ .mld-policies-types-wrapper .mld-policy-content {
+   height: 21em;
+ }
+ .mld-policies-types-wrapper .mld-policy-content tr {
+   height: 6em;
+   position: relative;
+ }
+ .mld-policy-upload-btn {
+   padding-top: 60px;
+   text-align: right;
+   display: inline-flex;
+   width: 100%;
+ }
+
+ .mld-policy-delete {
+   position: absolute;
+   right: 30px;
+   background-color: #18440a;
+   padding: 10px;
+   color: white;
+   border-radius: 12px;
+   display: none;
+   cursor: pointer;
+   top: 34px;
+ }
+ .mld-single-pdf-dele-option img {
+   cursor: pointer;
+ }
+ .mld-policy-content table {
+   border: unset !important;
+ }
+ .mld-policy-content tr td {
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 12px;
+    color: #18440a;
+ }
+ .mld-policy-content table {
+    border-spacing: 0 15px;
+ }
+ .mld-policy-upload-btn button {
+    background: #18440a;
+    color: white !important;
+    font-weight: 600;
+ }
+ .mld-policy-upload-btn button:hover {
+    background-color: #18440a !important;
+ }
+ .mld-policies-types-wrapper .mld-policy-heading {
+    font-size: 20px;
+    font-weight: 600;
+    color: #18440a;
+ }
+ .mld-upload-btn span {
+    padding-left: 16px;
+    vertical-align: bottom;
+ }
+ .mld-view-all-policy span {
+    color: #FFAD00;
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+ }
+ .mld-view-all-policy {
+    width: 30%;
+    text-align: left;
+    margin-top: 12px;
+ }
+ .mld-uplo-btn {
+  width: 70%;
+ }
+/**
+  * end new design css
+  */  
+
+  /**
+   *start admin policy css
+   */ 
+  .mld-policy-content tr .mld-policy-img {
+    width: 30%;
+    border-top-right-radius: unset;
+    border-bottom-right-radius: unset;
+  }
+  .mld-policy-content tr .mld-policy-img img {
+    border-radius: 12px;
+    height: 70px;
+  }
+  .mld-policy-content tr .mld-policy-title {
+    width: 60%; 
+    border-radius: unset;
+  }
+  .mld-policy-content tr .mld-policy-data {
+    width: 10%;
+    border-top-left-radius: unset;
+    border-bottom-left-radius: unset;
+  }
+  /**
+   *end admin policy css
+   */
+  .mld-pdf-not-found-msg {
+    font-weight: 600;
+    text-align: center;
+    color: #18440a;
+  }
+  .mld-contact-two-wrapper {
+    margin-top: -40px;
+  }
+  .mld-policy-title a {
+    color: #18440a;
+  }
+
+  /**
+   * add category css
+   */
+   .add-category-content {
+    cursor: pointer;
+   }
+  .add-category-content .mld-add-icon {
+    margin-left: 42%;
+  }
+  .add-category-content .mld-add-category-text {
+    text-align: center;
+  } 
+   /*
+    * end add category css
+    */
+
+/**
+ * start dropdown css
+ */
+.mld-account-dropdowns-wrapper {
+	width: 100%;
+	margin: 10px auto;
+}
+.mld-account-dropdowns-wrapper select {
+	width: 40%;
+	-webkit-appearance: progress-bar !important;
+    background-image: none !important;
+    background: #18440a;
+    color: white;
+    border-radius: 12px;
+}
+.mld-account-dropdowns-wrapper input {
+	width: 19%;
+	background: #ffb207 !important;
+  color: #18440a !important;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer !important;
+  padding: 14px;
+}
+.mld-close-category {
+	float: right;
+  margin-bottom: 10px;
+  color: red;
+  cursor: pointer;
+}
+.mld-user-pdf {
+  display: flex;
+  flex-wrap: wrap;
+}
+.mld-user-pdf .mld-pdf-main-wrapper {
+  width: 25%;
+}
+.mld-pdf-popup-content .mld-user-pdf .mld-pdf-main-wrapper {
+  width: 33%;
+}
+.mld-pdf-main-wrapper .mld-pdf-wrapper,
+.mld-user-pdf .mld-pdf-main-wrapper {
+  text-align: center;
+}
+.mld-term-condition-btn {
+  background: #ffb307 !important;
+  color: #18440a;
+  border-radius: 12px;
+  font-weight: 600;
+  margin-bottom: 0 !important;
+}
+.mld-term-condition-btn:hover {
+  background: #ffb307 !important;
+  color: #18440a !important;
+}
+/**
+ * end dropdown css
+ */
+.mld-delete-policy-type {
+  background: red;
+  color: white !important;
+  font-weight: 800;
+  padding: 12px;
+  font-size: 12px;
+  float: right;
+  clear: both;
+}
+.mld-delete-policy-type:hover {
+  background: red !important;
+}
+ .mld-teachers-comment {
+    background: #e4e4e4;
+    padding: 10px;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    margin-bottom: 5px;
+ }
+ .mld-comment-section {
+  overflow-y: auto;
+  height: 70%;
+ }
+ .mld-comment-footer-section {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+ }
+ .mld-comment-input-field {
+  width: 90%;
+ }
+ .mld-pdf-comment-btn,
+ .mld-comment-text {
+  border-radius: unset !important;
+ }
+ .mld-pdf-comment {
+  margin-top: 10px;
+ }
+ 
+ /**
+ * bank detail form UI
+ */
+.mld-list-a-wrapper input,
+.mld-list-b-wrapper input {
+  height: 20px;
+  width: 20px;
+  vertical-align: sub;
+}
+.mld-bank-detail-submit-btn {
+  float: right;
+  background: #ffb207 !important;
+  color: white !important;
+  cursor: pointer;
+}
+.mld-bank-detail-submit-btn:hover{
+  background: #ffb207 !important;
+  color: white !important;
+}
+.mld-padding {
+  padding: 10px;
+}
+.mld-list-a-wrapper ul,
+.mld-list-b-wrapper ul {
+  list-style: auto;
+}
+.mld-righr-to-work-list li,
+.mld-list-a {
+  font-weight: 600;
+}
+.mld-personal-detail-wrapper,
+.mld-personal-detail-wrapper .mld-pd-row1,
+.mld-personal-detail-wrapper .mld-pd-row2,
+.mld-personal-detail-wrapper .mld-pd-row3,
+.mld-bank-detail-row1,
+.mld-bank-detail-row2,
+.mld-bank-detail-row3,
+.mld-internal-use-wrapper {
+  width: 100%;
+}
+.mld-pd-title-wrapper .mld-pd-title,
+.mld-pd-title-wrapper .mld-pd-title-data,
+.mld-pd-forename-wrapper .mld-pd-forename,
+.mld-pd-forename-wrapper .mld-pd-forename-data,
+.mld-pd-surname-wrapper .mld-pd-surname,
+.mld-pd-surname-wrapper .mld-pd-surname-data,
+.mld-pd-ni-number-wrapper .mld-pd-ni-number,
+.mld-pd-ni-number-wrapper .mld-pd-ni-number-data,
+.mld-pd-dob-wrapper .mld-pd-dob,
+.mld-pd-dob-wrapper .mld-pd-dob-data,
+.mld-pd-home-address-wrapper .mld-pd-home-address,
+.mld-pd-home-address-wrapper .mld-pd-home-address-data,
+.mld-pd-home-email-wrapper .mld-pd-home-email,
+.mld-pd-home-email-wrapper .mld-pd-home-email-data,
+.mld-pd-mobile-number-wrapper .mld-pd-mobile-number,
+.mld-pd-mobile-number-wrapper .mld-pd-mobile-number-data,
+.mld-pd-subjects-wrapper .mld-pd-subjects,
+.mld-pd-subjects-wrapper .mld-pd-subjects-data,
+.mld-bd-b-name-wrapper .mld-bd-name,
+.mld-bd-b-name-wrapper .mld-bd-name-data,
+.mld-bd-b-account-name-wrapper .mld-bd-account-name,
+.mld-bd-b-account-name-wrapper .mld-bd-account-name-data,
+.mld-bd-sort-code-wrapper .mld-bd-sort-code,
+.mld-bd-sort-code-wrapper .mld-bd-sort-code-data,
+.mld-bd-b-account-number-wrapper .mld-bd-b-account-number,
+.mld-bd-b-account-number-wrapper .mld-bd-b-account-number-data,
+.mld-bd-bank-address-data,
+.mld-bd-bank-address,
+.mld-certificate-dob,
+.mld-certificate-dob-data,
+.mld-current-yn,
+.mld-current-yn-data,
+.mld-certificate-number,
+.mld-certificate-number-data,
+.mld-certificate-surname,
+.mld-certificate-surname-data,
+.mld-internal-use,
+.mld-internal-use-data {
+  height: 50px;
+  border: 1px solid black;
+}
+.mld-pd-title-wrapper,
+.mld-pd-forename-wrapper,
+.mld-pd-surname-wrapper,
+.mld-pd-ni-number,
+.mld-pd-dob,
+.mld-pd-home-address,
+.mld-pd-home-address,
+.mld-pd-mobile-number,
+.mld-pd-home-email,
+.mld-pd-subjects,
+.mld-bd-sort-code,
+.mld-bd-b-account-number,
+.mld-bd-account-name,
+.mld-bd-name,
+.mld-bd-bank-address,
+.mld-certificate-number,
+.mld-certificate-surname,
+.mld-current-yn,
+.mld-certificate-dob,
+.mld-internal-use {
+  width: 33.33%;
+}
+.mld-pd-ni-number-data,
+.mld-pd-dob-data,
+.mld-pd-home-address-data,
+.mld-pd-home-address-data,
+.mld-pd-mobile-number-data,
+.mld-pd-home-email-data,
+.mld-pd-subjects-data,
+.mld-bd-sort-code-data,
+.mld-bd-b-account-number-data,
+.mld-bd-name-data,
+.mld-bd-account-name-data,
+.mld-bd-bank-address-data,
+.mld-certificate-number-data,
+.mld-certificate-surname-data,
+.mld-current-yn-data,
+.mld-certificate-dob-data,
+.mld-internal-use-data {
+  width: 66.67%;
+}
+.mld-pd-title,
+.mld-pd-title-data,
+.mld-pd-forename,
+.mld-pd-forename-data,
+.mld-pd-surname,
+.mld-pd-surname-data,
+.mld-pd-ni-number-wrapper,
+.mld-pd-dob-wrapper,
+.mld-pd-home-email-wrapper,
+.mld-pd-mobile-number-wrapper,
+.mld-bd-b-name-wrapper,
+.mld-bd-b-account-name-wrapper,
+.mld-bd-sort-code-wrapper,
+.mld-bd-b-account-number-wrapper,
+.mld-certificate-number-wrapper,
+.mld-certificate-surname-wrapper,
+.mld-current-yn-wrapper,
+.mld-certificate-dob-wrapper {
+  width: 50%;
+}
+.mld-pd-row1,
+.mld-pd-title-wrapper,
+.mld-pd-forename-wrapper,
+.mld-pd-surname-wrapper,
+.mld-pd-row2,
+.mld-pd-ni-number-wrapper,
+.mld-pd-dob-wrapper,
+.mld-pd-home-address-wrapper,
+.mld-pd-home-address-wrapper,
+.mld-pd-row4,
+.mld-pd-home-email-wrapper,
+.mld-pd-mobile-number-wrapper,
+.mld-pd-subjects-wrapper,
+.mld-bank-detail-row1,
+.mld-bank-detail-row2,
+.mld-bd-b-name-wrapper,
+.mld-bd-b-account-name-wrapper,
+.mld-bd-sort-code-wrapper,
+.mld-bd-b-account-number-wrapper,
+.mld-bd-bank-address-wrapper,
+.mld-disclosure-service-row1,
+.mld-disclosure-service-row2,
+.mld-disclosure-service-row3,
+.mld-certificate-number-wrapper,
+.mld-certificate-surname-wrapper,
+.mld-current-yn-wrapper,
+.mld-certificate-dob-wrapper,
+.mld-internal-use-wrapper {
+  display: flex;
+}
+.mld-certificate-surname,
+.mld-certificate-dob,
+.mld-bd-account-name {
+  line-height: 1;
+}
+.mld-error-msg {
+  color: red;
+  font-weight: 600;
+  text-align: center;
+  display: none;
+}
+.mld-click-to-update {
+  float: right;
+}
+.mld-message-reference {
+  font-weight: 600;
+  color: #18440a;
+}
+.mld-message {
+  margin-left: 10px;
+}
+.mld-communication-wrapper {
+  height: 150px;
+  max-height: 150px;
+  overflow: auto;
+}
+@media screen  and ( max-width: 1000px ) {
+  .mld-user-pdf .mld-pdf-main-wrapper {
+    width: 30%;
+    margin-right: 3%;
+  }  
+}
+@media screen  and ( max-width: 900px ) {
+
+  .mld-user-pdf .mld-pdf-main-wrapper {
+    width: 28%;
+    margin-right: 5%;
+  }
+	.mld-account-dropdowns-wrapper select,
+	.mld-account-dropdowns-wrapper input {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+  .mld-pd-row1,
+  .mld-pd-row2,
+  .mld-pd-row4,
+  .mld-bank-detail-row1,
+  .mld-bank-detail-row2,
+  .mld-disclosure-service-row1,
+  .mld-disclosure-service-row2 {
+    display: block;
+  }
+  .mld-pd-title-wrapper,
+  .mld-pd-forename-wrapper,
+  .mld-pd-surname-wrapper,
+  .mld-pd-ni-number-wrapper,
+  .mld-pd-dob-wrapper,
+  .mld-pd-home-email-wrapper,
+  .mld-pd-mobile-number-wrapper,
+  .mld-bd-b-name-wrapper,
+  .mld-bd-b-account-name-wrapper,
+  .mld-bd-sort-code-wrapper,
+  .mld-certificate-number-wrapper,
+  .mld-certificate-surname-wrapper,
+  .mld-current-yn-wrapper,
+  .mld-certificate-dob-wrapper,
+  .mld-bd-b-account-number-wrapper {
+    width: 100%;
+  }
+  .mld-pd-title,
+  .mld-pd-forename,
+  .mld-pd-surname,
+  .mld-pd-ni-number,
+  .mld-pd-dob,
+  .mld-pd-home-email,
+  .mld-pd-mobile-number,
+  .mld-bd-name,
+  .mld-bd-account-name,
+  .mld-bd-sort-code,
+  .mld-certificate-number,
+  .mld-certificate-surname,
+  .mld-current-yn,
+  .mld-certificate-dob {
+    width: 33.33%;
+  }
+  .mld-pd-title-data,
+  .mld-pd-forename-data,
+  .mld-pd-surname-data,
+  .mld-pd-ni-number-data,
+  .mld-pd-dob-data,
+  .mld-pd-home-email-data,
+  .mld-pd-mobile-number-data,
+  .mld-bd-name-data,
+  .mld-bd-account-name-data,
+  .mld-bd-sort-code-data,
+  .mld-certificate-number-data,
+  .mld-certificate-surname-data,
+  .mld-current-yn-data,
+  .mld-certificate-dob-data {
+    width: 66.67%;
+  }
+}
+@media screen and (max-width: 700px){
+  .mld-user-pdf .mld-pdf-main-wrapper {
+    width: 40%;
+    margin-right: 10%;
+  }
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
+}  
+ /**
+  * end popup css
+  */
+@media only screen and (max-width: 1100px) {
+
+    .mld-policy-search-field {
+        margin-bottom: 20px;
+    }
+    .mld-policies-types-wrapper .mld-main-policy-wrapper {
+        width: 49%;
+        margin: 0 0 10px 0;
+    }
+    .mld-policies-types-wrapper {
+        margin-top: 10px;
+    }
+    .mld-pdf-wrapper img {
+        padding: 20px;
+        background: #335749;
+        height: 150px !important;
+    }
+ }
+@media only screen and (max-width: 950px) {
+    .mld-policy-upload-btn {
+        padding-top: 80px;
+    }
+ }
+@media only screen and (max-width: 750px) {
+    .mld-policies-types-wrapper .mld-main-policy-wrapper {
+        width: 100%;
+    }
+    .mld-signature-table,
+    .mld-human-resources-table {
+      width: 800px;
+    }
+    .mld-signature-wrapper,
+    .mld-human-resources-wrapper {
+      overflow-x: scroll;
+    }
+ }
+@media only screen and (max-width: 850px) {
+  .mld-account-wrapper .mld-wrapper-hidden {
+    display: none;
+  }
+  .mld-subject-details-inner-wrapper .mld-account-input-wrapper {
+      float: none;
+      width: 100%;
+   }
+   .mld-subject-details-inner-wrapper .mld-tags-wrapper {
+      float: none;
+      width: 100%;
+   }
+   .mld-tags-wrapper {
+      padding: 0 2%;
+   }
+   .mld-account-wrapper .mld-account-input-wrapper,
+   .mld-account-parent-inner-wrap,
+   .mld-password-reset-fields .mld-account-input-wrapper,
+   .mld-security-setting-button .mld-account-input-wrapper
+   .mld-subject-details-wrapper input, 
+   .mld-subject-details-wrapper select,
+   .mld-files-wrapper button,
+   .mld-user-profile-wrapper .mld-user-profile,
+   .mld-user-profile-wrapper .mld-persobal-btn,
+   .mld-user-profile-wrapper .mld-persobal-btn button,
+   .mld-subject-details-inner-wrapper input,
+   .mld-password-reset-main-wrapper input,
+   .mld-security-setting-button .mld-account-input-wrapper {
+      width: 100%;
+   }
+
+   .mld-account-inner-wrapper .mld-account-wrapper,
+   .mld-account-inner-wrapper .mld-parent-account-wrapper,
+   .mld-password-reset-fields {
+      display: revert;
+   }
+   .mld-files-wrapper button,
+   .mld-subject-details-wrapper,
+   .mld-subject-details-dropdown select {
+      margin-bottom: 10px;
+   }
+   .mld-user-profile-wrapper .mld-user-profile,
+   .mld-user-profile-wrapper .mld-persobal-btn {
+      float: none;
+   }
+   .mld-user-profile-wrapper .mld-user-profile {
+      text-align: center;
+   }
+   .mld-user-profile-wrapper .mld-edit-profile {
+      top: 0px;
+      left: 55%;
+   }
+   .mld-user-profile {
+      margin-top: 20px;
+   }
+   .mld-tag-button {
+      width: 100%;
+      margin: 5px;
+   }
+   .mld-user-pdf {
+      text-align: center;
+   }
+   .mld-upload-files-wrapper .mld-upload-files {
+      width: 100%;
+      float: right;
+   }
+   .mld-upload-files-wrapper .mld-save-changes {
+      width: 100%;
+      float: left;
+   }
+   .mld-upload-files-wrapper .mld-save-changes button,
+   .mld-upload-files-wrapper .mld-upload-files button {
+      width: 100%;
+   }
+ }
+ #wp-mld-comment-box-wrap .wp-media-buttons {
+  display: none !important;
+ }
+ .mld-document-inner .mld-title,
+ .mld-document-inner .mld-file,
+ .mld-form-inner .mld-title,
+ .mld-form-inner .mld-file {
+    width: 50%;
+ }
+ .mld-document-inner .mld-title,
+ .mld-form-inner .mld-title {
+    float: left;
+    margin-top: 7px;
+    font-size: 18px;
+    color: #365249;
+ }
+ .mld-document-inner .mld-form-file,
+ .mld-form-inner .mld-form-file {
+    border: unset;
+    border-radius: unset;
+    padding-top: 4px;
+ }
+ .mld-document-inner .mld-file,
+ .mld-form-inner .mld-file {
+    float: right;
+ }
+ .mld-document-inner,
+ .mld-form-inner {
+    background: #e4e4e466;
+    padding: 10px;
+    border-radius: 23px;
+    border: 1px solid #e5d8d8;
+    margin-bottom: 10px;
+ }
+ .mld-forms-wrapper {
+    margin-top: 40px;
+ }
+ .mld-statutory-title, 
+ .mld-form-title {
+    font-weight: 600;
+    color: #365249;
+    font-size: 20px;
+    margin-left: 24px;
+    margin-bottom: 10px;
+ }
+ .mld-update-checklist {
+    text-align: center;
+ }
+ .mld-update-checklist input {
+    width: 60%;
+    border-radius: 50px !important;
+    background: #595959 !important;
+    cursor: pointer !important;
+ }
+ .mld-update-checklist input:hover {
+    background: #595959 !important;
+ }
+input::file-selector-button {
+  font-weight: bold;
+  color: #365249;
+  padding: 10px 20px;
+  border: 1px solid #e4e4e4;
+  border-radius: 50px;
+  background: #e4e4e4;
+  cursor: pointer;
+}
+@media only screen and (max-width: 500px) {
+  .mld-user-pdf .mld-pdf-main-wrapper {
+    width: 100%;
+    text-align: center;
+    flex-wrap: 1 1 calc(50% - 10px);
+  }
+  .mld-user-pdf.mld-delete-user-pdf {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .mld-personal-detail-wrapper,
+  .mld-disclosure-service-wrapper,
+  .mld-bank-detail-wrapper {
+    width: 600px;
+  }
+  .mld-personal-detail-main-wrapper,
+  .mld-bank-detail-main-wrapper,
+  .mld-disclosure-service-main-wrapper {
+    overflow-x: scroll;
+  }
+} 
+.mld-refrence-form-wrapper .mld-filled-data {
+    font-weight: 600;
+}
+.mld-refrence-form-wrapper .mld-answer-box input {
+    width: 100%;
+    border: unset;
+    background: unset;
+}
+.mld-add-another-referr {
+    cursor: pointer;
+    font-weight: 600;
+}
+.mld-refrence-form-wrapper {
+    border: unset;
+}
+.mld-refrence-form-wrapper tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.mld-refrence-form-wrapper tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+.mld-refree-heading {
+    background-color: #365249 !important;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+.mld-user-pdf .mld-main-pdf-wrapper {
+  width: 45%;
+}
+.mld-main-pdf-wrapper .mld-pdf-name {
+  width: 90%;
+  overflow: hidden;
+  height: 36px;
+}
+.mld-checklist-error {
+  margin: 10px;
+  color: red;
+  display: none;
+  text-align: center;
+}
+/*My account*/
+.mld-wrapper-hidden
+.mld-account-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.mld-input-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.mld-input-content input,
+.mld-input-content select,
+.mld-input-content textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #555;
+}
+
+.mld-input-content input[readonly],
+.mld-input-content textarea[readonly] {
+    cursor: not-allowed;
+}
+
+.mld-input-content textarea {
+    resize: none;
+    height: auto;
+}
+
+.mld-input-content input:focus,
+.mld-input-content textarea:focus,
+.mld-input-content select:focus {
+    outline: none;
+    border-color: #173f2a;
+    background-color: #fff;
+}
+.mld-pop-outer {
+    z-index: 100;
+    position: fixed;
+    top: 0 !important;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    backdrop-filter: blur(10px);
+    transition: opacity 225ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mld-pop-inner {
+    transform: translate(-50%, -50%) !important;
+    top: 50% !important;
+    position: absolute !important;
+    left: 50%;
+}

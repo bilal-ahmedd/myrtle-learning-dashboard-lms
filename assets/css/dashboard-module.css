@@ -1,0 +1,89 @@
+/*hide registration button*/
+.ast-container {
+    width: 100%;
+    max-width: 100%;
+}
+.ast-container,
+.ast-container .content-area {
+    margin: unset !important;
+    padding: unset !important;
+}
+.ast-container .content-area article {
+    padding: unset !important;
+}
+.ld-js-register-account {
+    display: none !important;
+}
+.ml-side-bar a {
+    text-decoration: none !important;
+    color: #fff !important;
+}
+.ml-side-bar .active a {
+    color:#013220 !important;
+}
+.cross-dashboard-bar {
+    display:none;
+}
+.mld-grid-container {
+    justify-content: center;
+}
+.mld-dashborad-chatbox-wrapper {
+    max-width: unset;
+}
+.mld-course-grid-list-wrapper .ld-section-heading {
+    display: none !important;
+}
+.mld-box-shadow {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.mld-menu-handle-wrapper {
+    cursor: pointer;
+    transition: background-color 0.5s ease, background 0.3s ease;
+}
+
+.mld-menu-handle-wrapper:hover {
+    background: linear-gradient(135deg, #fff, #f0f0f0);
+}
+.mld-menu-handle-wrapper:hover a {
+    color:#013220 !important;
+}
+.mld-menu-handle-wrapper:hover svg {
+    fill: #013220 !important;
+}
+@media only screen and (max-width: 1260px) {
+
+    .ml-side-bar a {
+        font-size: 15px;
+    }
+    .ml-side-bar svg {
+        height: 25px !important;
+        width: 25px !important;
+    }
+}
+@media only screen and (max-width: 1200px and min-width: 1024px ) {
+
+    .mld-grid-container {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-gap: 16px;
+    }
+
+    .mld-grid-container > :nth-child(3) {
+        grid-column: span 2; 
+    }
+}
+@media only screen and (max-width: 1024px) {
+
+    .ml-side-bar {
+        display: none;
+    }
+    .mld-side-bar-logo-wrapper .wp-block-image {
+        margin: 30px !important;
+    }
+    .mld-side-bar-logo-wrapper {
+        gap: 55px !important;
+    }
+}
+
+
+

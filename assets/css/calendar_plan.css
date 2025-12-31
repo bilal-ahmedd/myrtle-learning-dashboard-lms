@@ -1,0 +1,87 @@
+.tribe-events-calendar-list__event.tribe-common-g-row.tribe-common-g-row--gutters {
+	margin: unset !important;
+	padding: unset !important;
+}
+.tribe-common-g-row.tribe-events-calendar-list__event-row {
+	background-color: #f1f4f2;
+	padding-bottom: 50px;
+	margin-left: unset;
+	border-radius: 12px;
+	box-shadow: 0px 2px 5px #c5b6b6;
+}
+.mld-calendar-list-view .tribe-common-g-row.tribe-events-calendar-list__event-row {
+	display: none;
+}
+.tribe-events-calendar-list .tribe-common-g-row.tribe-events-calendar-list__event-row:nth-child(1),
+.tribe-events-calendar-list .tribe-common-g-row.tribe-events-calendar-list__event-row:nth-child(2),
+.tribe-events-calendar-list .tribe-common-g-row.tribe-events-calendar-list__event-row:nth-child(3) {
+	display: flex !important;
+}
+.tribe-events-calendar-list__event.tribe-common-g-row .tribe-events-calendar-list__event-featured-image {
+	height: 140px !important;
+	object-fit: fill !important;
+}
+@media only screen and (max-width: 1400px) {
+	.tribe-events-calendar-list__event-featured-image-wrapper.tribe-common-g-col {
+		padding-left: 30px !important;
+	}
+	.mld-main-calendar-section {
+		width: 60% !important;
+	}
+	.mld-calendar-list-view {
+		width: 40% !important;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.mld-main-calendar-section {
+		width: 75% !important;
+	}
+	.mld-calendar-list-view{
+		width: 25% !important;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.mld-main-calendar-section {
+		width: 65% !important;
+	}
+	.mld-calendar-list-view{
+		width: 35% !important;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	.mld-main-calendar-section {
+		width: 100% !important;
+	}
+	.mld-calendar-list-view {
+		width: 100% !important;
+	}
+	.tribe-common-g-row.tribe-events-calendar-list__event-row {
+		width: 45% !important;
+	}
+	.tribe-events-calendar-list {
+		display: flex !important;
+		flex-wrap: wrap !important;
+	}
+	.tribe-events .tribe-events-calendar-list__month-separator+.tribe-events-calendar-list__event-row {
+		margin-top: unset !important;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	.tribe-events-calendar-list__event-featured-image-wrapper.tribe-common-g-col {
+		padding-right: 13px !important;
+	}
+}
+@media only screen and (max-width: 500px) {
+	.mld-calendar-wrapper .tribe-common-g-row.tribe-events-calendar-list__event-row,
+	.mld-calendar-list-view .tribe-common-g-row.tribe-events-calendar-list__event-row {
+		width: 70% !important;
+		margin: 10px auto !important;
+	}
+	.tribe-events-calendar-list__event-featured-image-wrapper.tribe-common-g-col {
+		padding-right: 20px !important;
+	}
+}

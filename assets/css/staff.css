@@ -1,0 +1,1502 @@
+ /**
+  * Registration form css
+  */
+/*hide header*/
+.ast-builder-grid-row-mobile-layout-default {
+    display: none !important;
+}
+.mld-error {
+    text-align: center;
+    color: red;
+    font-weight: 600;
+}
+.mld-teacher-registration-wrapper {
+    font-size: 20px;
+    font-weight: 600;
+    color: #04390B;
+    position: relative;
+    background: white;
+    width: 75%;
+    margin: 150px auto;
+    padding: 100px; 
+    border-radius: 12px;
+}
+.mld-experience-text {
+    text-align: left;
+}
+.mld-passrate-data {
+    width: 100%;
+    overflow-x: auto;
+}
+.mld-staff-inner-content  {
+    position: relative;
+    display: none;
+}
+
+.mld-staff-box-popup {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 100%;
+    z-index: 10;
+    height: 400px;
+}
+
+.mld-staff-box-popup.right-align {
+    left: 100%;
+    right: auto;
+}
+
+.mld-staff-box-popup.left-align {
+    right: 100%;
+    left: auto;
+}
+.mld-tooltip-triangle {
+    position: absolute;
+    top: 50%;
+    right: -13px;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid white;
+    z-index: 999;
+}
+
+.mld-staff-popup-name h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.mld-staff-popup-courses {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+.mld-staff-popup-experience h4,
+.mld-staff-popup-pass-rate h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.mld-popup-table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+.mld-popup-table th {
+    background-color: #18440a; /* Use your preferred green color */
+    color: white;
+    font-weight: bold;
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.mld-popup-table td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.mld-popup-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.mld-view-more-info {
+    display: flex;
+    justify-content: right;
+}
+.mld-view-more-info .dashicons-visibility {
+    background: #fff;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    color: #d4d4d4;
+    cursor: pointer;
+}
+/* Ensure consistent width and scroll behavior for all popups */
+.mld-staff-box-popup::-webkit-scrollbar {
+    width: 6px; /* Custom scrollbar width */
+}
+
+.mld-staff-box-popup::-webkit-scrollbar-thumb {
+    background-color: #18440a; /* Scrollbar color matches table header */
+    border-radius: 4px;
+}
+
+.mld-staff-box-popup::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+ .mld-surname-wrapper {
+    display: inline-flex;
+}
+.mld-registration-surname label {
+    line-height: unset;
+    margin-right: 20px;
+}
+.mld-form-field label {
+    margin-bottom: 5px;
+}
+.mld-personal-statement {
+    width: 98%;
+    margin-bottom: 30px;
+}
+.mld-form-fields-wrapper {
+    display: inline-flex;
+    width: 100%;
+    margin: auto;
+}
+.mld-form-fields-wrapper .mld-form-field {
+    width: 100%;
+    margin: 0 auto 10px auto;
+}
+.mld-form-fields-wrapper .mld-form-field input {
+    width: 95%;
+}
+.mld-surname-radio {
+    width: 14px !important;
+}
+.mld-date {
+    padding: 12px !important;
+}
+.mld-footer-number,
+.mld-second-footer-number {
+    text-align: center;
+    font-weight: 600;
+    color: #365249;
+}
+.mld-footer-buttom button,
+.mld-registration-submit-btn .mld-registration-sub-btn,
+.mld-registration-submit-btn .mld-reg-back-btn {
+    background: #ffb207 !important;
+    color: #18440a !important;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer !important;
+    margin-right: 2.5% !important;
+}
+.mld-registration-submit-btn .mld-registration-sub-btn,
+.mld-footer-buttom button {
+    float: right;
+}
+.mld-registration-submit-btn {
+    margin-top: 30px;
+}
+.mld-footer-buttom button:hover {
+    background-color: #ffb207 !important;
+}
+.mld-form-field select {
+    width: 95%;
+    height: 48px;
+    appearance: revert;
+    background-image: none !important;
+}
+.mld-imporant {
+    color: red;
+    font-weight: 600;
+}
+.mld-registration-table button {
+    margin-bottom: 30px;
+    background-color: #18440a;
+    border-radius: 12px;
+    color: white !important;
+}
+.mld-registration-table table {
+    width: 97.5%;
+}
+.mld-registration-table {
+    overflow-x: auto;
+}
+.mld-experience-years select {
+    width: 100%;
+    appearance: revert;
+    background-image: none !important;
+}
+.mld-experience-years tr th,
+.mld-university-education tr th,
+.mld-college-education tr th {
+    background-color: #18440a;
+    color: white;
+}
+.mld-form-second-page {
+    display: none;
+}
+.mld-staff-loader {
+    display: none;
+    height: 20px;
+}
+.mld-teacher-registration-wrapper input[type="number"],
+.mld-teacher-registration-wrapper input[type="text"],
+.mld-teacher-registration-wrapper textarea,
+.mld-teacher-registration-wrapper select {
+    border-radius: 12px;
+}
+.mld-main-button-wrapper,
+.mld-row-without-button {
+    width: 97%;
+}
+.mld-new-row {
+    width: 97%;
+}
+.mld-new-row .mld-add-new-row {
+    background: unset !important;
+    color: #18440a !important;
+    padding: unset;
+    float: right;
+    text-decoration: underline;
+    font-weight: 600;
+    margin-bottom: unset !important;
+    margin-top: 14px;
+}
+.mld-new-row .mld-add-new-row:hover {
+    background-color: unset !important;
+}
+.mld-new-row .mld-add-new-row:active {
+    background-color: unset !important;
+    color: unset !important;
+    border: none !important;
+}
+.mld-new-row button {
+    margin-bottom: 15px !important;
+}
+.mld-new-row .mld-add-new-without-btn {
+    margin-bottom: 15px !important;
+}
+.mld-delete-table-row {
+    color: red;
+    cursor: pointer;
+}
+.mld-experience-years tbody td,
+.mld-university-education tbody td,
+.mld-college-education tbody td {
+    text-align: center !important;
+    padding: 3px !important; 
+}
+.mld-form-field .select2-container {
+    width: 95% !important;
+}
+.mld-recaptcha {
+    float: right;
+    margin-right: 2%;
+}
+.mld_avatar_url {
+/*    width: 51% !important;
+    border-radius: 53% !important;
+    height: 53% !important;*/
+    border-radius: 53% !important;
+/*    height: 160px !important;
+    width: 162px !important;*/
+}
+.mld_no_avatar_url,
+.mld_avatar_url {
+    height: 160px !important;
+    width: 162px !important;
+}
+.mld-g-leader-subjects .mld-t-sub {
+    overflow-wrap: anywhere !important;
+    margin-bottom: 5px;
+    /*overflow: hidden;   
+    height: 100%;*/
+}
+.mld-teacher-form-step .mld-step-number {
+    border: 2px solid #e4e4e4;
+    width: 31px;
+    margin-top: 4px;
+    border-radius: 50%;
+    text-align: center;
+}
+.mld-teacher-form-step .mld-step-line {
+    width: 90%;
+    background-color: #e4e4e4;
+    height: 2px;
+    margin-top: 19px;
+}
+.mld-teacher-form-step {
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.mld-main-logo,
+.mld-main-title {
+    text-align: center;
+}
+.mld-main-logo {
+    margin-bottom: 60px;
+}
+.mld-main-title {
+    margin-bottom: 30px;
+    color: #18440a;
+}
+.mld-main-logo img {
+    height: 100px !important;
+}
+.mld-add-subject-text {
+    width: 95%;
+    text-align: right;
+}
+.mld-add-subject-text-wrapper div {
+    text-align: right;
+    width: 95%;
+    cursor: pointer;
+}
+.mld-add-sub-field {
+    display: none;
+}
+.mld-add-sub-field input {
+    width: 68% !important;
+    border-radius: 5px !important;
+}
+.mld-add-sub-field button {
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ffb207;
+}
+.mld-add-sub-field button:hover {
+    background-color: #ffb207 !important;
+    color: #18440a !important;
+}
+.mld-staff-form-wrapper {
+    padding: unset !important;
+    background-image: url(https://myrtlesite.ams3.digitaloceanspaces.com/wp-content/uploads/2022/09/back.png);
+    background-color: #335749 !important;
+    background-repeat: no-repeat !important;
+}
+.mld-staff-form-wrapper .e-con-inner {
+    margin: unset !important;
+    padding: unset !important;
+    max-width: 100% !important;
+}
+.mld-staff-background-overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: var(--e-global-color-622f309);
+    opacity: 0.94 !important;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+}
+.mld-college-education tbody td input,
+.mld-university-education tbody td input,
+.mld-experience-years tbody td select {
+    border: unset !important;
+}
+/**
+ * staff page css
+ */
+ .mld-staff-wrapper {
+    width: 89%;
+    margin: auto;
+ }
+ .mld-peoceed-btn-wrapper {
+    display: inline-flex;
+    display: flex;7
+    align-items: center;
+ }
+ .mld-staff-proceed-btn button {
+    border-radius: 12px;
+    margin-top: 36px;
+    padding: 18px;
+    margin-left: 10px;
+    font-weight: bold;
+    background-color: #fcb408 !important;
+    color: #18440a !important;
+    display: flex;
+    gap: 10px;
+ }
+ .mld-staff-proceed-btn button:hover {
+    background-color: #fcb408 !important;
+    color: #18440a !important;
+ }
+ .mld-group-leaders-wrapper {
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+ }
+ .mld-group-leaders-wrapper .mld-g-leader-name,
+ .mld-group-leaders-wrapper .mld-g-leader-btn {
+    text-align: center;
+ }
+ .mld-g-leader-btn {
+    display: flex;
+    justify-content: center;
+ }
+ .mld-group-leaders-wrapper .mld-g-leader-name {
+    font-weight: 600;
+    color: #18440a;  
+    padding-top: 10px;
+ }
+ .mld-group-leaders-wrapper .mld-g-leader-photo {
+    text-align: center;
+ }
+ .mld-group-leaders-wrapper .mld-g-leader-photo img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover; 
+    border-radius: 50%; 
+    margin: 0 auto 10px;
+    display: block;
+    border: 2px solid #ddd;
+ }
+ .mld-group-leaders-wrapper .mld-g-leader-inner {
+    background: #e4e4e45c;
+    border-radius: 12px;
+    width: 30%;
+    margin: 10px;
+    position: relative;
+ }
+.mld-staff-content {
+    /*width: 90%;*/
+   /* margin: auto;*/
+}
+.mld-group-leaders-wrapper .mld-g-leader-subjects {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    color: #18440a;
+    height: 40px;
+}
+.mld-subject-border {
+    border: 2px solid #857c7c;
+    margin-right: 8px;
+    margin-left: 5px;
+}
+.mld-group-leaders-wrapper .mld-g-leader-inner {
+    padding: 20px 10px;
+}
+.mld-teacher-hover-content {
+    /*position: relative;*/
+    background: red;
+    width: 300px;
+    /*display: none;*/
+}
+.mld-no-teacher-found {
+    font-size: 16px;
+    font-weight: bold;
+    color: #04390b;
+    text-align: center;
+    background-color: #e1f3e1;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 1px solid #b1d9b1;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+.mld-college-education input[type="date"],
+.mld-university-education input[type="date"] {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+}
+/**
+ * strat full detail css
+ */
+.mld-group-leader-avatar {
+    width: 20%;
+}
+ .mld-group-leader-avatar img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover; 
+    border-radius: 50%; 
+    margin: 0 auto 10px;
+    display: block;
+    border: 2px solid #ddd;
+ }
+ .mld-full-detail-head {
+    display: block;
+    width: 100%;
+    background-color: #e4e4e45c;
+    border-radius: 12px;
+ }
+ .mld-full-detail-head .mld-head-left {
+    width: 100%;
+    padding: 25px 0 25px 25px;
+    display: flex;
+    gap: 20px;
+ }
+ .mld-full-detail-head .mld-head-right {
+    width: 100%;
+    padding: 20px 0 20px 20px;
+    background-color: #e4e4e4;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+ }
+ .mld-clear-both {
+    clear: both;
+ }
+  .mld-head-left .mld-group-leader-detail {
+    float: right;
+    width: 69%;
+    color: #18440a;
+ }
+ .mld-name .mld_Subjects {
+    width: 17%;
+ }
+ .mld-name .mld_detail_Subjects {
+    width: 83%;
+ }
+ .mld-name .mld-name-label {
+    font-weight: 600;
+    font-size: 17px;
+ }
+ .mld-group-leader-detail .mld-name {
+    margin-bottom: 10px;
+    display: flex;
+ }
+  .mld-name .mld-name-detail {
+    font-size: 17px;
+    word-wrap: break-word;
+ }
+ .mld-full-detail-wrapper {
+    width: 90%;
+    margin: auto;
+ }
+ .mld-staff-header-wrapper {
+    width: 100%;
+ }
+ .mld-group-leader-statement {
+    border: 2px solid #18440a;
+    padding: 25px;
+    border-radius: 12px;
+    margin-top: 40px;
+    color: #18440a;
+    font-size: 17px;
+    font-weight: 600;
+ }
+ .mld-group-leader-educational-details,
+ .mld-group-leader-experience-details {
+    background-color: #e4e4e45c;
+    border-radius: 12px;
+    margin-top: 30px;
+    padding: 25px;
+ }
+ .mld-full-detail-wrapper table {
+    margin-top: 30px;
+ }
+ .mls-staff-search-weapper {
+    background: white;
+    width: 400px;
+    border: 1px solid #e4e4e4;
+    border-radius: 12px;
+    padding: 2px 8px;
+    float: right;
+ }
+ .mld-search-teacher {
+    width: 85%;
+    border: unset !important;
+    background: unset !important;
+ }
+ .mld-staff-search {
+    background: unset;
+    font-size: 26px;
+    padding: unset;
+ }
+ .mld-staff-search:hover {
+    background-color: unset !important;
+    color: #003333 !important;
+ }
+ .mld-staff-course-dropdown label {
+    font-size: 21px;
+    font-weight: 600;
+ }
+ .mld-staff-courses {
+    appearance: revert;
+    background-image: none !important;
+    width: width;
+    width: 350px;
+    border: 1px solid #18440a;
+    color: #18440a;
+    border-radius: 12px;
+    font-weight: 600;
+ }
+ .mld-g-leader-btn .mld-group-leader-detail {
+    width: 90%;
+    border-radius: 12px;
+    padding: 17px;
+    font-weight: 600;
+    background-color: #fcb408 !important;
+    color: #18440a !important;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+ .mld-head-right input[type="radio"] {
+
+    transform: scale(1.5);
+    /*margin-right: 5px;*/
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #18440a;
+    background-color: white;
+    outline: none;
+ }
+ .mld-head-right input[type="radio"]:checked {
+    background-color: #18440a;
+    border: 2.5px solid white;
+}
+.mld-availability,
+.mld-unavailability {
+    margin-bottom: 10px;
+}
+.mld-head-right label {
+    font-size: 20px;
+    vertical-align: bottom;
+    color: #18440a;
+    margin-left: 10px;
+}
+.mld-full-detail-wrapper table {
+    text-align: center;
+    font-weight: 600;
+}
+.mld-full-detail-wrapper table thead tr td,
+.mld-full-detail-wrapper table thead tr th {
+    color: white;
+    background-color: #18440a;
+}
+.mld-download-staff-profile {
+    margin-top: 30px;
+}
+.mld-download-staff-profile a {
+    background: red;
+    padding: 12px 20px;
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+    background-color: #fcb408;
+}
+/**
+ * start checkbox  css
+ */
+.mld-dbs {
+    display: inline-flex;
+}
+.mld-dbs-checkbox {
+    margin-left: 10px;
+}
+.mld-dbs-checkbox {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.mld-dbs-checkbox input { 
+  opacity: 0;
+  width: 50px;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #18440a;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #18440a;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/**
+ * start button css
+ */
+.mld-personal-statement-btn,
+.mld-educational-details-btn,
+.mld-group-leader-experience-details button {
+    border-radius: 12px;
+    font-weight: 600;
+    color: white !important;
+    padding: 17px;
+    background-color: #18440a;
+    margin-bottom: 15px;
+}
+.mld-personal-statement-btn:hover,
+.mld-educational-details-btn:hover,
+.mld-group-leader-experience-details button:hover {
+    background-color: #18440a !important;
+}
+.mld-staff-back-btn {
+    width: 90%;
+    margin: auto;
+    color: #18440a;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.mld-staff-back-btn .mld-staff-icon {
+    border: 2px solid #18440a; 
+    border-radius: 50%;
+    vertical-align: sub;
+}
+.mld-group-leader-educational-details,
+.mld-group-leader-experience-details {
+    overflow-x: auto;
+}
+
+/**
+ * Teacher registration form css
+ */
+ .mld-fields-empty-message {
+    color: red;
+    font-weight: 600;
+    display: none;
+ }
+ .mld-t-sub {
+    height: 85px;
+    overflow: hidden;
+ }
+ .mld-teacher-registration-message,
+ .mld-fields-empty-message {
+    text-align: center;
+ }
+ /** popup css **/
+#mld-teacher-contact-popup {
+    float: right !important;
+    border-radius: 12px !important;
+    margin-top: 20px !important;
+    padding: 20px 30px !important;
+    font-weight: 600 !important;
+    background-color: #fcb408 !important;
+    color: white !important;
+}
+.mld-teacher-contact-popup:hover {
+    color: white !important;
+}
+ .mld-staff-popup {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+.mld-staff-popup-content {
+    background-color: white;
+    margin: 4% auto;
+    padding: 20px;
+    border: 1px solid #888888;
+    width: 40%;
+    font-weight: bolder;
+    border-radius: 12px !important;
+}
+.mld-staff-popup button {
+    display: block;
+    margin: 0 auto;
+}
+.mld-email-content-wrapper h5 {
+    margin-bottom: 10px;
+}
+.mld-staff-popup-content label {
+    color: #18440a !important;
+}
+.mld-staff-popup-content input {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 10px !important;
+}
+.mld-staff-popup-e-sender,
+.mld-staff-popup-e-sub {
+    background-color: unset !important;
+}
+.mld-staff-popup-e-content,
+.mld-staff-popup-content input {
+    border: 1px solid #18440a;
+}
+.mlf-staff-email-btn {
+    border: unset !important;
+}
+.mld-staff-popup-close {
+    color: #18440a;
+    cursor: pointer;
+    width: 32px;
+    text-align: center;
+    box-shadow: 0px 2px 5px #c5b6b6 !important;
+    padding: 5px 5px;
+    border-radius: 17px;
+    float: right;
+}
+.mld-staff-popup-e-sub,
+.mld-staff-popup-e-content {
+    width: 100%;
+    border: 1px solid #e4e4e4;
+    background: unset;
+    border-radius: 12px;
+}
+.mlf-staff-email-btn {
+    margin-top: 20px;
+    font-weight: 600;
+    color: white !important;
+    cursor: pointer;
+    /*background-color: #18440a !important;*/
+    width: 200px !important;
+    padding: 10px 0 !important;
+    border: unset !important;
+}
+.mlf-staff-email-btn:hover {
+    /*background-color: #18440a !important;*/
+    color: white !important;
+}
+.mld-sent-btn-wrapper {
+    text-align: right !important;
+}
+
+ /** end popup css **/
+
+ /** start checkbox css **/
+   .mld-dbs-checkbox {
+    --blue: #e4e4e4;
+    --g08: #E1E5EB;
+    --g04: #848ea1;
+  }
+
+  .mld-dbs-checkbox .dbs {
+    display: none;
+  }
+  .mld-dbs-checkbox .dbs,
+  .mld-dbs-checkbox .dbs:after,
+  .mld-dbs-checkbox .dbs:before,
+  .mld-dbs-checkbox .dbs *,
+  .mld-dbs-checkbox .dbs *:after,
+  .mld-dbs-checkbox .dbs *:before,
+  .mld-dbs-checkbox .dbs + .dbs-btn {
+    box-sizing: border-box;
+  }
+  .mld-dbs-checkbox .dbs::selection,
+  .mld-dbs-checkbox .dbs:after::selection,
+  .mld-dbs-checkbox .dbs:before::selection,
+  .mld-dbs-checkbox .dbs *::selection,
+  .mld-dbs-checkbox .dbs *:after::selection,
+  .mld-dbs-checkbox .dbs *:before::selection,
+  .mld-dbs-checkbox .dbs + .dbs-btn::selection {
+    background: none;
+  }
+  .mld-dbs-checkbox .dbs + .dbs-btn {
+    outline: 0;
+    display: block;
+    width: 57px;
+    height: 27px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    font-size: 12px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .mld-dbs-checkbox .dbs + .dbs-btn:after,
+  .mld-dbs-checkbox .dbs + .dbs-btn:before {
+    position: relative;
+    display: block;
+    content: "";
+    width: 44%;
+    height: 100%;
+  }
+  .mld-dbs-checkbox .dbs + .dbs-btn:after {
+    left: 0;
+  }
+  .mld-dbs-checkbox .dbs + .dbs-btn:before {
+    display: inline;
+    position: absolute;
+    top: 3px;
+  }
+  .mld-dbs-checkbox .dbs:checked + .dbs-btn:after {
+    left: 56.5%;
+  }
+
+  .mld-dbs-checkbox .dbs-checkbox-cls + .dbs-btn {
+    background: var(--g08);
+    border-radius: 20rem;
+    padding: 3px;
+    transition: all 0.4s ease;
+    box-shadow: inset 0 0 0 1px #18440a;
+  }
+  .mld-dbs-checkbox .dbs-checkbox-cls + .dbs-btn:after {
+    border-radius: 2em;
+    background: #18440a;
+    transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), padding 0.3s ease, margin 0.3s ease;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  }
+  .mld-dbs-checkbox .dbs-checkbox-cls + .dbs-btn:before {
+    content: "No";
+    left: 28px;
+    color: var(--g04);
+    transition: left 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .mld-dbs-checkbox .dbs-checkbox-cls + .dbs-btn:active {
+    box-shadow: inset 0 0 0 30px rgba(0, 0, 0, 0.1);
+  }
+  .mld-dbs-checkbox .dbs-checkbox-cls + .dbs-btn:active:after {
+    padding-right: 0.4em;
+  }
+  .mld-dbs-checkbox .dbs-checkbox-cls:checked + .dbs-btn {
+    background: var(--blue);
+  }
+  .mld-dbs-checkbox .dbs-checkbox-cls:checked + .dbs-btn:active {
+    box-shadow: inset 0 0 0 30px rgba(0, 0, 0, 0.1);
+  }
+  .mld-dbs-checkbox .dbs-checkbox-cls:checked + .dbs-btn:active:after {
+    margin-left: -0.4em;
+  }
+  .mld-dbs-checkbox .dbs-checkbox-cls:checked + .dbs-btn:before {
+    content: "Yes";
+    left: 4px;
+    color: var(--g04);
+  }
+ /** end checkbox css **/
+
+ /** start radio css **/
+ .mld-input-border {
+    border: 2px solid #18440a;
+    padding: 7px 0 0 4px;
+    border-radius: 20px;
+ }
+ /** end radio css **/
+ /** start form css **/
+ .mld-registration-terms-condition {
+    float: left !important;
+}
+.mld-pop-outer {
+    position: absolute;
+    z-index: 99;
+}
+.mld-pop-inner {
+    background-color: #e4e4e4;
+    padding: 20px;
+}
+.mld-applicent-label p,
+.mld-experience-label p,
+.mld-information-label p,
+.mld-job-title-label p,
+.mld-time-period-label p,
+.mld-applicent-capacity-label p,
+.mld-organization-title-label p,
+.mld-job-duties-label p,
+.mld-applicent-work-behaviour-label p,
+.mld-applicent-trustworthy-label p,
+.mld-applicent-duty-care-label p,
+.mld-applicent-disciplinary-warnings-label p,
+.mld-leaving-reasons-label p,
+.mld-re-employ-applicent-label p,
+.mld-applicent-job-describe-label p,
+.mld-applicent-specification-label p,
+.mld-applicent-work-with-children-label p,
+.mld-applicent-work-with-children-answer-label p,
+.mld-applicent-further-comment-label p {
+    margin: unset;
+    padding: 10px;
+}
+.mld-applicent-disciplinary-warnings-label {
+    line-height: 1.5;
+}
+.mld-applicent-disciplinary-warnings-label,
+.mld-applicent-disciplinary-warnings-data {
+    height: 65px !important;
+}
+.mld-job-title-data p,
+.mld-time-period-data p,
+.mld-applicent-capacity-data p,
+.mld-organization-title-data p,
+.mld-job-duties-data p,
+.mld-leaving-reasons-data p,
+.mld-applicent-specification-data p,
+.mld-applicent-further-comment-data p,
+.mld-applicent-work-with-children-answer-data p {
+    margin: unset;
+    padding: 10px;
+}
+.mld-experience-data p,
+.mld-applicent-trustworthy-data p,
+.mld-applicent-duty-care-data p,
+.mld-applicent-disciplinary-warnings-data p,
+.mld-re-employ-applicent-data p,
+.mld-applicent-job-describe-data p,
+.mld-applicent-work-with-children-data p {
+    margin: unset;
+    padding: 10px;
+}
+.mld-experience-data input,
+.mld-applicent-trustworthy-data input,
+.mld-applicent-duty-care-data input,
+.mld-applicent-disciplinary-warnings-data input,
+.mld-re-employ-applicent-data input,
+.mld-applicent-job-describe-data input,
+.mld-applicent-work-with-children-data input {
+    vertical-align: middle;
+}
+.mld-job-title-data,
+.mld-time-period-data,
+.mld-applicent-capacity-data,
+.mld-organization-title-data,
+.mld-job-duties-data,
+.mld-leaving-reasons-data,
+.mld-applicent-specification-data,
+.mld-applicent-further-comment-data,
+.mld-applicent-work-with-children-answer-data {
+    overflow-y: auto;
+}
+input.mld-experience-yes,
+input.mld-experience-no,
+input.mld-trustworthy-yes,
+input.mld-trustworthy-no,
+input.mld-duty-care-yes,
+input.mld-duty-care-no,
+input.mld-disciplinary-warnings-yes,
+input.mld-disciplinary-warnings-no,
+input.mld-re-employ-yes,
+input.mld-re-employ-no,
+input.mld-job-describe-yes,
+input.mld-job-describe-no,
+input.mld-work-with-children-yes,
+input.mld-work-with-children-no {
+    width: 23px;
+    height: 20px;
+}
+.mld-start-date,
+.mld-end-date {
+    padding: 13px 0 0 13px;
+}
+.mld-salary {
+    padding: 7px 0 0 13px;
+}
+.mld-start-date input,
+.mld-end-date input,
+.mld-salary input {
+    border: unset;
+}
+.mld-start-date input,
+.mld-end-date input,
+.mld-salary input {
+    background-color: #e4e4e4;
+}
+.mld-first-label {
+    border-top: 4px solid #365249;
+    border-right: 3px solid #e4e4e4;
+    border-left: unset;
+    border-bottom: unset;
+}
+.mld-general-data {
+    border-top: unset;
+    border-right: 3px solid #e4e4e4;
+    border-left: unset;
+    border-bottom: unset;
+}
+.mld-last-label {
+    border-top: unset;
+    border-right: 3px solid #e4e4e4;
+    border-left: unset;
+    border-bottom: 4px solid #365249;
+}
+.mld-first-answer {
+    border-top: 4px solid #365249;
+    border-bottom: unset;
+    border-right: unset;
+    border-left: unset;
+}
+.mld-general-answer {
+    border: unset;
+}
+.mld-last-answer {
+    border-top: unset;
+    border-bottom: 4px solid #365249;
+    border-right: unset;
+    border-left: unset;
+}
+.mld-refree-heading {
+    text-align: left;
+}
+.mld-ref-submit,
+.mld-applicent-submit {
+    float: right;
+    background-color: #fcb408 !important;
+    color: white !important;
+}
+.mld-ref-submit:hover,
+.mld-applicent-submit:hover {
+    background-color: #fcb408 !important;
+    color: white !important;
+}
+.mld-clear-both {
+    clear: both;
+}
+/** start second form css **/
+.mld-applicent-label {
+    float: left;
+    width: 30%;
+}
+.mld-applicent-label,
+.mld-experience-label,
+.mld-information-label,
+.mld-job-title-label,
+.mld-time-period-label,
+.mld-applicent-capacity-label,
+.mld-organization-title-label,
+.mld-job-duties-label,
+.mld-applicent-work-behaviour-label,
+.mld-label,
+.mld-applicent-trustworthy-label,
+.mld-applicent-duty-care-label,
+.mld-applicent-disciplinary-warnings-label,
+.mld-leaving-reasons-label,
+.mld-re-employ-applicent-label,
+.mld-applicent-job-describe-label,
+.mld-applicent-specification-label,
+.mld-applicent-work-with-children-label,
+.mld-applicent-work-with-children-answer-label,
+.mld-applicent-further-comment-label {
+    background-color: #365249;
+    color: white;
+}
+.mld-applicent-data {
+    float: right;
+    width: 70%;
+    padding-left: 10px;
+}
+.mld-min-height {
+    height: 60px;
+}
+.mld-applicent-data,
+.mld-experience-data {
+    background-color: #e4e4e4;
+    border-top: 2px solid #365249;
+    border-bottom: 2px solid #365249;
+}
+.mld-form-applicent {
+    border-bottom: 3px solid white;
+}
+.mld-experience-label,
+.mld-applicent-trustworthy-label,
+.mld-applicent-duty-care-label,
+.mld-applicent-disciplinary-warnings-label,
+.mld-re-employ-applicent-label,
+.mld-applicent-job-describe-label,
+.mld-applicent-work-with-children-label {
+    float: left;
+    width: 70%;
+    color: white;
+}
+.mld-experience-data,
+.mld-applicent-trustworthy-data,
+.mld-applicent-duty-care-data,
+.mld-applicent-disciplinary-warnings-data,
+.mld-re-employ-applicent-data,
+.mld-applicent-job-describe-data,
+.mld-applicent-work-with-children-data {
+    float: right;
+    width: 30%;
+}
+.mld-applicent-information,
+.mld-job-title,
+.mld-time-period,
+.mld-applicent-capacity,
+.mld-organization-title,
+.mld-job-duties,
+.mld-applicent-work-behaviour,
+.mld-applicent-disciplinary-warnings,
+.mld-applicent-trustworthy,
+.mld-applicent-duty-care,
+.mld-leaving-reasons,
+.mld-re-employ-applicent,
+.mld-applicent-job-describe,
+.mld-applicent-specification,
+.mld-applicent-work-with-children,
+.mld-applicent-work-with-children-answer,
+.mld-applicent-further-comment,
+.mld-organization-table {
+    margin-top: 5px;
+}
+.mld-applicent-information-data .mld-start-date,
+.mld-applicent-information-data .mld-end-date,
+.mld-applicent-information-data .mld-salary {
+    width: 33.33%;
+    background-color: #e4e4e4;
+}
+.mld-applicent-information-data .mld-start-date,
+.mld-applicent-information-data .mld-end-date {
+    border-right: 2px solid #365249;
+}
+.mld-applicent-information-data {
+    display: flex;
+}
+.mld-job-title-data,
+.mld-time-period-data,
+.mld-applicent-capacity-data,
+.mld-organization-title-data,
+.mld-job-duties-data,
+.mld-applicent-trustworthy-data,
+.mld-applicent-duty-care-data,
+.mld-applicent-disciplinary-warnings-data,
+.mld-leaving-reasons-data,
+.mld-re-employ-applicent-data,
+.mld-applicent-job-describe-data,
+.mld-applicent-specification-data,
+.mld-applicent-work-with-children-data,
+.mld-applicent-work-with-children-answer,
+.mld-applicent-further-comment-data {
+    background-color: #e4e4e4;
+}
+ /** end form css **/
+@media only screen and (max-width: 1400px) {
+    .mld-head-left .mld-group-leader-detail {
+        float: none;
+        width: 100%;
+        margin-left: 10px;
+    }
+}
+@media only screen and (max-width: 1000px) {
+
+    .mld-applicent-information-data {
+        display: block;
+    }
+    .mld-applicent-information-data .mld-start-date, .mld-applicent-information-data .mld-end-date, .mld-applicent-information-data .mld-salary {
+        width: 100%;
+        text-align: center;
+    }
+    .mld-applicent-information-data .mld-salary input {
+        border: 1px solid #ffffff;
+    }
+    .mld-applicent-information-data .mld-start-date, .mld-applicent-information-data .mld-end-date {
+        border-right: unset;
+        border-bottom: 2px solid #365249;
+    }
+    .mld-applicent-work-bahaviour-data table {
+        width: 800px;
+    }
+    .mld-applicent-work-bahaviour-data {
+        overflow-x: auto;
+    }
+    .mld-form-fields-wrapper {
+        display: inline-block;
+    }
+    .mld-group-leaders-wrapper .mld-g-leader-inner {
+        width: 45%;
+    }
+    .mld-name .mld_Subjects {
+        width: 100px;
+        white-space: pre;
+    }
+}
+@media only screen and (max-width: 800px) {
+
+.mld-applicent-label,
+.mld-experience-label,
+.mld-information-label,
+.mld-job-title-label,
+.mld-time-period-label,
+.mld-applicent-capacity-label,
+.mld-organization-title-label,
+.mld-job-duties-label,
+.mld-applicent-work-behaviour-label,
+.mld-label,
+.mld-applicent-trustworthy-label,
+.mld-applicent-duty-care-label,
+.mld-applicent-disciplinary-warnings-label,
+.mld-leaving-reasons-label,
+.mld-re-employ-applicent-label,
+.mld-applicent-job-describe-label,
+.mld-applicent-specification-label,
+.mld-applicent-work-with-children-label,
+.mld-applicent-work-with-children-answer-label,
+.mld-applicent-further-comment-label,
+.mld-job-title-data,
+.mld-time-period-data,
+.mld-applicent-capacity-data,
+.mld-organization-title-data,
+.mld-job-duties-data,
+.mld-applicent-trustworthy-data,
+.mld-applicent-duty-care-data,
+.mld-applicent-disciplinary-warnings-data,
+.mld-leaving-reasons-data,
+.mld-re-employ-applicent-data,
+.mld-applicent-job-describe-data,
+.mld-applicent-specification-data,
+.mld-applicent-work-with-children-data,
+.mld-applicent-work-with-children-answer,
+.mld-applicent-further-comment-data {
+    font-size: 10px;
+    line-height: 1.3;
+}
+.mld-experience-data label,
+.mld-applicent-trustworthy-data label,
+.mld-applicent-duty-care-data label,
+.mld-applicent-disciplinary-warnings-data label,
+.mld-re-employ-applicent-data label,
+.mld-applicent-job-describe-data label,
+.mld-applicent-work-with-children-data label {
+    font-size: 10px;
+}
+.mld-experience-data input,
+.mld-applicent-trustworthy-data input,
+.mld-applicent-duty-care-data input,
+.mld-applicent-disciplinary-warnings-data input,
+.mld-re-employ-applicent-data input,
+.mld-applicent-job-describe-data input,
+.mld-applicent-work-with-children-data input {
+    width: 20px;
+    height: 15px;
+}
+    .mld-staff-popup-content {
+        width: 80%;
+    }
+    .mld-teacher-registration-wrapper {
+        padding: 100px 20px;
+    }
+    .mld-full-detail-head .mld-head-left {
+        width: 100%;
+        display: block;
+    }
+    .mld-group-leader-detail {
+        text-align: left;
+    }
+    .mld-name-label {
+        text-align: left;
+    }
+    .mld-college-education,
+    .mld-university-education,
+    .mld-experience-years {
+        width: 700px !important;
+    } 
+    .mld-group-leader-avatar,
+    .mld-staff-back-btn,
+    .mld-full-detail-wrapper {
+        width: 100%;
+    }
+    .mld-group-leader-avatar img {
+        margin: 0 10px !important;
+    }
+    .mld-name .mld_detail_Subjects {
+        width: unset;
+    }
+}
+@media only screen and (max-width: 600px) {
+    
+    .mld-organization-table table {
+        width: 600px;
+    }    
+    .mld-organization-table {
+        overflow-x: auto;
+    }
+    .mld-teacher-registration-wrapper,
+    .mld-staff-popup-content {
+        width: 95%;
+    }
+    .mld-new-row .mld-add-new-row {
+        margin-bottom: 15px !important;
+    }
+    .mld-group-leaders-wrapper .mld-g-leader-inner {
+        width: 90%;
+    }
+    .mld-peoceed-btn-wrapper {
+        display: inline-block;
+        width: 90%;
+        margin-left: 3%;
+    }
+    .mld-staff-course-dropdown p {
+        margin-bottom: unset;
+    }
+    .mld-staff-proceed-btn button {
+        margin-top: 10px;
+        margin-left: unset;
+    }
+    .mls-staff-search-weapper {
+        width: 90%;
+        float: unset;
+        margin-left: 3%;
+    }
+    .mld-staff-wrapper,
+    .mld-staff-courses {
+        width: 100%;
+    }
+    .mld-group-leader-educational-details table,
+    .mld-group-leader-experience-details table {
+        width: 500px;
+    }
+    .mld-form-fields-wrapper {
+        display: inline-block;
+    } 
+    .mld-reg-back-btn,
+    .mld-registration-sub-btn {
+        width: 100%;
+    }
+    .mld-registration-sub-btn {
+        margin-top: 10px;
+        float: none !important;
+    }
+    .mld-name .mld-name-label,
+    .mld-name-detail {
+        font-size: 14px !important;
+    }
+    .mld-full-detail-head .mld-head-left {
+        padding-left: 0px !important;
+    }
+}
+
+.reference-content {
+    width: fit-content;
+    padding: 20px;
+    box-shadow: 2px 2px 8px #7e7171;
+    border-radius: 12px;
+    margin: auto;
+}

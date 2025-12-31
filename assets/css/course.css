@@ -1,0 +1,149 @@
+.mld-courses-list-wrapper {
+	background: #f3f3f3;
+    padding: 20px;
+    border-radius: 20px;
+}
+.mld-courses-list-wrapper .learndash-wrapper .ld-item-list .ld-item-list-item {
+	background: #f2f2f2;
+	border-radius: 5px !important;
+    box-shadow: 0px 2px 5px #c5b6b6 !important;
+}
+.mld-courses-list-wrapper .ld-section-heading h3,
+.ld-profile__saved-cards,
+.ld-section-heading {
+	display: none !important;
+}
+.mld-courses-list-wrapper .ld-item-list-actions {
+	width: 100% !important;
+	display: contents !important;
+}
+.mld-dashboard-courses-section .ld-course-title {
+	font-size: 15px !important;
+}
+.mld-courses-list-wrapper .ld-item-list-actions .ld-expand-button {
+	float: right;
+	width: 170px;
+    background: #ffb307 !important;
+    border-radius: 12px;
+}
+.mld-courses-list-wrapper .ld-pagination.ld-pagination-page-profile .ld-pages {
+	background: unset !important;
+}
+.mld-courses-list-wrapper .ld-pagination.ld-pagination-page-profile .ld-pages .prev.ld-primary-color-hover,
+.mld-courses-list-wrapper .ld-pagination.ld-pagination-page-profile .ld-pages .next.ld-primary-color-hover  {
+	background: #e4e4e4;
+	padding: unset;
+}
+.mld-courses-list-wrapper .ld-pagination.ld-pagination-page-profile .ld-pages span {
+	background: #e4e4e475;
+    padding: 14px;
+    border-radius: 24px;
+}
+.mld-courses-list-wrapper .mld-course-featured-image {
+	width: 80px;
+    height: 60px;
+    border-radius: 14px;
+}
+.mld-courses-list-wrapper .ld-status-icon.ld-status-incomplete,
+.mld-courses-list-wrapper .ld-status-icon.ld-status-complete,
+.mld-courses-list-wrapper .ld-status-icon.ld-status-in-progress {
+	margin-top: 1.7% !important;
+}
+.mld-courses-list-wrapper #ld-main-course-list .ld-course-title {
+	margin: auto 0 auto 10px !important;
+}
+.mld-user-courses-shortcode.mld-courses-list-wrapper {
+	padding: unset;
+	margin-top: 20px;
+}
+.mld-courses-list-wrap .mld-selected-group-id,
+.mld-courses-list-wrap .mld-selected-user-id {
+	width: 98%;
+    height: 65px;
+    border-radius: 12px;
+    line-height: 30px;
+    font-weight: 600;
+    color: white;
+    border: unset;
+    background: #18440a;
+}
+.mld-courses-list-wrap .mld-courses-loader {
+	display: none;
+}
+.mld-courses-dropdown-wrapper .mld-courses-group-dropdown {
+	float: left;
+	width: 50%;
+}
+.mld-courses-dropdown-wrapper .mld-courses-user-dropdown {
+	float: right;
+	width: 50%;
+}
+.mld_clear_both {
+	clear: both;
+}
+.mld-courses-dropdown-wrapper .mld-courses-group-title,
+.mld-courses-dropdown-wrapper .mld-courses-user-title {
+	font-weight: 600;
+    margin-left: 5px;
+    color: #18440a;
+    margin-bottom: 8px;
+    font-size: 18px
+}
+.mld-courses-dropdown-wrapper {
+	width: 100%;
+    margin: auto;
+}
+
+@media only screen and (max-width: 700px) {
+	.mld-courses-list-wrap .mld-selected-group-id,
+	.mld-courses-list-wrap .mld-selected-user-id {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+	.mld-courses-dropdown-wrapper .mld-courses-group-dropdown,
+	.mld-courses-dropdown-wrapper .mld-courses-user-dropdown {
+		width: 100%;
+		float: unset;
+	}
+}
+
+/** course main dashboard css **/
+.mld-dashboard-courses-section .learndash-wrapper .ld-item-list .ld-item-list-item {
+    background: #f2f2f2;
+	border-radius: 13px !important;
+	box-shadow: 0px 2px 5px #c5b6b6 !important;
+}
+.mld-dashboard-courses-section .ld-section-heading {
+    display: none !important;
+}
+.mld-dashboard-courses-section .ld-item-list.ld-course-list {
+    margin: unset !important;
+}
+.mld-dashboard-courses-section .ld-item-list-item.ld-item-list-item-course {
+    margin-top: unset !important;
+}
+.mld-dashboard-courses-section .ld-pages {
+    background-color: unset !important;
+    flex: unset !important;
+}
+.mld-dashboard-courses-section .ld-pages a span{
+    background-color: #bfbfbf !important;
+}
+.mld-dashboard-courses-section .ld-pages span {
+    background: #f6f4f5 !important;
+    padding: 10px;
+    border-radius: 19px;
+    color: #04390B !important;
+}
+.mld-icon-main-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 4%;
+    font-size: 35px;
+}
+.mld-actions-icon {
+    font-size: 42px !important;
+    height: 42px !important;
+    width: 42px !important;
+}

@@ -1,0 +1,271 @@
+.mld-second-part-main-wrapper td {
+	padding-left: 2px !important;
+	text-align: center;
+}
+.mld-attendance-table .attendance-btn,
+.mld-student-attendance {
+	padding: 10px;
+	background: #fcb408;
+	cursor: pointer;
+	color: white;
+}
+.mld-attendance-table .attendance-btn:hover {
+ 	background: #fcb408;
+}
+.mld-attendance-table th {
+	background: #18440a;
+	color: white;
+}
+.mld-attendance-table th,
+.mld-attendance-table td {
+	padding: 10px;
+}
+.mld-second-part-main-wrapper {
+	width: 90%;
+	margin-left: 30px;
+}
+.mld-attendance-main-wrapper {
+	width: 100%;
+	padding: 0 26px 0 30px;
+}
+/*.mld-attendance-pagination,*/
+.mld-attendance-first-row {
+	display: flex
+	;
+}
+.mld-attendance-first-row,
+.mld-attendance-second-row,
+.mld-attendance-third-row,
+.mld-attendance-hours {
+	width: 100%;
+}
+.mld-attendance-first-row .mld-attendance-inner-wrapper {
+	width: 49%;
+}
+.mld-exclude-user .select2-container--default,
+.mld-include-user .select2-container--default {
+	width: 95%;
+}
+.mld-attendance-inner-wrapper .mld-group-label,
+.mld-attendance-inner-wrapper .mld-user-label,
+.mld-attendance-inner-wrapper .mld-course-label,
+.mld-attendance-inner-wrapper .mld-lesson-label,
+.mld-attendance-inner-wrapper .mld-topic-label,
+.mld-attendance-inner-wrapper .mld-quiz-label {
+	font-weight: 600;
+    color: #18440a;
+    margin: 10px 0 10px 0;
+}
+.mld-attendance-main-wrapper .mld-select-group,
+.mld-attendance-main-wrapper .mld-select-course {
+	-webkit-appearance: auto;
+	background-image: none;
+	background: #18440a;
+	color: white;
+	border-radius: 12px;
+	padding: 16px;
+	width: 95%;
+}
+.mld-attendance-submit-wrapper {
+	width: 95%;
+    margin-top: 15px;
+}
+.mld-attendance-submit-wrapper button {
+	float: right;
+	border-radius: 12px;
+	padding: 20px;
+	cursor: pointer;
+	color: white !important;
+	font-weight: 600;
+	background: #fcb408;
+}
+.mld-attendance-filter {
+	margin: 0 0 0 29px;
+}
+.mld-attendance-filter-wrapper select {
+	display: none;
+	background: #18440a;
+	width: 300px;
+	color: #ffffff;
+}
+.mld-attendance-filter-wrapper {
+	width: 93%;
+}
+.mld_selected_field_msg {
+	font-size: 20px;
+    margin-bottom: 10px;
+}
+.mld-attendance-comment,
+.mld-attendance-submit button,
+.mld-filter-btn,
+.mld-submit-btn,
+.mld-download-btn {
+	background: #18440a;
+}
+.mld-download-btn {
+	float: left;
+	margin-bottom: 10px;
+}
+.mld-download-btn a {
+	color: #ffffff;
+}
+.mld-submit-btn {
+	float: right;
+	margin-bottom: 10px !important;
+}
+.mld-attendance-comment:hover,
+.mld-attendance-submit button:hover,
+.mld-filter-btn:hover,
+.mld-submit-btn:hover,
+.mld-download-btn:hover {
+	background: #18440a;
+}
+.mld-attendance-comment-btn button {
+	background: #18440a;
+	padding: 15px;
+	width: 174px;
+	cursor: pointer;
+}
+.mld-attendance-comment-title {
+	font-size: 26px;
+	font-weight: 600;
+}
+.mld-attendance-close-icon {
+	float: right;
+    color: red;
+    font-size: 35px;
+    margin-top: -28px;
+    cursor: pointer;
+}
+.mld-attendance-textarea {
+	margin-top: 30px;
+}
+.mld-attendance-end-date,
+.mld-attendance-start-date,
+.mld-filter-btn,
+.mld-attendance-second-row,
+.mld-attendance-back-btn,
+.mld-attendance-pagination,
+.mld-submit-btn {
+	display: none;
+}
+.mld-attendance-end-date,
+.mld-attendance-start-date {
+	background: #18440a;
+	color: white;
+	padding: 8px 10px;
+}
+.mld-backward-attendance,
+.mld-forward-attendance {
+	margin-top: 3px;
+	cursor: pointer;
+	width: 20%;
+}
+.mld-start-page,
+.mld-end-page,
+.mld-backward-attendance,
+.mld-forward-attendance {
+	width: 20%;
+}
+
+.mld-pagination-number,
+.mld-pagination-text {
+	width: 60%;
+	display: flex;
+}
+.mld-attendance-pagination {
+	background: #e4e4e4;
+	width: 300px;
+	height: 30px;
+	padding-top: 2px;
+	border-radius: 12px;
+	margin: 20px auto;
+}
+/*.mld-attendance-pagination div {
+	width: 35%;
+}*/
+.mld-pagination-loader {
+	margin-left: 50%;
+	margin-top: -97px;
+}
+.mld-no-attendance-found {
+	text-align: center;
+}
+.mld-comment-icon {
+	font-size: 25px;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.attendance-type-wrapper {
+	display: flex;
+	width: 97%;
+}
+.attendance-type-wrapper .mld-user-attendance,
+.attendance-type-wrapper .mld-teacher-attendance {
+	width: 49%;
+}
+.mld-user-attendance,
+.mld-teacher-attendance {
+	padding: 10px;
+	color: #ffffff;
+	background: #e4e4e4;
+	font-weight: 700;
+	font-size: 20px;
+	text-align: center;
+	cursor: pointer;
+}
+.attendance-active {
+	background: #fcb408;
+}
+.mld-number-of-hours {
+	width: 100%;
+}
+.mld-attendance-inner-row {
+	background: #18440a;
+	color: white;
+	font-weight: 600;
+}
+.mld-inner-attendance-wrapper {
+	height: 200px;
+	overflow: auto;
+}
+table button {
+	background: #fcb408;
+	padding: 10px;
+}
+table tr th {
+	background: #18440a;
+}
+table tr th,
+table button {
+	color: white;
+}
+@media only screen and (max-width: 1000px) {
+	.mld-attendance-table {
+		width: 900px;	
+	}
+	.mld-second-part-main-wrapper {
+		overflow: auto;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.mld-attendance-main-wrapper .mld-attendance-first-row,
+	.mld-attendance-main-wrapper .mld-attendance-second-row,
+	.mld-attendance-main-wrapper .mld-attendance-third-row {
+		display: block;
+	}
+	.mld-attendance-main-wrapper input,
+	.mld-attendance-submit-wrapper button,
+	.mld-attendance-filter select,
+	.mld-attendance-main-wrapper .mld-attendance-inner-wrapper {
+		width: 100%;
+	}
+	.mld-attendance-submit-wrapper button {
+		padding: 15px;
+		margin-bottom: 10px;
+	}
+	.mld-attendance-filter {
+		width: 90%;
+	}
+}

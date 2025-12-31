@@ -1,0 +1,270 @@
+.elementor-element.elementor-element-85c7a88.e-con-boxed.e-con {
+    display: none !important;
+}
+.mld-resources-wrapper select {
+    width: 95%;
+    height: 65px;
+    border-radius: 12px;
+    line-height: 30px;
+    font-weight: 600;
+    color: white;
+    border: unset;
+    background: #18440a;
+}
+#mld-program-dropdown,
+#resource-answer-dropdown {
+    width: 97%;
+}
+.mld-resources-wrapper #resource-answer-dropdown {
+    background-color: unset !important;
+    color: #18440a !important;
+    border: 2px solid #18440a !important;
+}
+.mld-resources-wrapper {
+    width: 100%;
+    margin: auto;
+}
+.mld-exam-wrapper,
+.mld-resource-subject-wrapper {
+    width: 89%;
+}
+.mld-resources-wrapper .mld-resource-exam,
+.mld-year-wrapper .mld-resource-tier,
+.mld-resource-subject-wrapper .mld-resource-subject {
+    float: left;
+    width: 50%;
+}
+.mld-resources-wrapper .mld-resource-paper,
+.mld-year-wrapper .mld-resource-year,
+.mld-resource-subject-wrapper .mld-resource-type {
+    float: right;
+    width: 50%;
+}
+.mld-resources-wrapper .mld-program,
+.mld-resources-wrapper .mld-subject,
+.mld-resources-wrapper .mld-exam,
+.mld-resources-wrapper .mld-paper,
+.mld-resources-wrapper .mld-year,
+.mld-resources-wrapper .mld-tier,
+.mld-resource-type .mld-type,
+.mld-resources-wrapper .mld-resource-answer-title {
+    color: #18440a;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 1% 1%;
+}
+.mld-resources-wrapper .mld-proceed-btn {
+    background: #fcb408;
+    width: 18%;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 12px;
+    font-size: 17px;
+    cursor: no-drop;
+    margin-top: 2%;
+    margin-left: 79%;
+    margin-bottom: 30px;
+}
+.mld-pop-inner .mld-download-wrapper {
+    margin-top: 3%;
+    float: right;
+    margin-right: 10%;
+}
+.mld-pop-inner .mld-download-wrapper .mld-download-link {
+    background: #18440a;
+    padding: 20px 40px;
+    font-weight: 600;
+    color: white;
+    font-size: 20px;
+    border-radius: 50px;
+}
+.mld-download-wrapper .mld-download-icon {
+    font-size: 40px;
+}
+.mld-popup-header .resource-mld-header-title {
+    width: 90%;
+    float: right;
+}
+.mld-popup-header .mld-close {
+    width: 10%;
+    float: left;
+    border-radius: 50%;
+    margin-left: unset;
+}
+.mld-resource-content .mld-video-iframe {
+    height: 100%;
+}
+.mld-resource-popup-inner .mld-resource-content {
+    width: 80%;
+    margin: auto;
+} 
+.mld-popup-header .mld-close .dashicons.dashicons-no {
+    background: #18440a;
+    height: 45px;
+    color: white;
+    width: 47px;
+    border-radius: 50%;
+    float: left;
+    font-size: 42px;
+/*    box-shadow: 3px 3px 5px #1b1515;*/
+}
+.mld-resource-popup-inner .mld-popup-header {
+    height: 20%;
+}
+.mld-resource-popup-inner .mld-resource-content {
+    height: 60%;
+}
+
+/** start top section UI **/
+.mld-resources-wrapper .mld-resource-top-section {
+    width: 95%;
+    padding: 31px;
+    border: 1px solid #18440a;
+    border-radius: 12px;
+    background: #fff;
+    margin: auto;
+}
+/*.mld-top-inner-section .mld-primary-section {
+    width: 50%;
+    float: left;
+}
+.mld-top-inner-section .mld-secondary-section {
+    width: 50%;
+    float: right;
+    text-align: right;
+}*/
+.mld-resource-top-main-section,
+.mld-resourse-content-section,
+.mld-resource-answer-main-wrapper {
+    width: 100%;
+    background: #fff;
+    padding: 10px 0;
+    border-radius: 12px;
+}
+.mld-resource-answer-main-wrapper {
+    margin-bottom: 15px;
+}
+.mld-resourse-content-section {
+    margin: 15px 0;
+}
+.mld-clear-both {
+    color: both;
+}
+.mld-top-inner-section .mld-primary-section a,
+.mld-top-inner-section .mld-secondary-section a {
+/*    background: #fcb408;
+    padding: 10px;
+    border-radius: 12px;*/
+    font-weight: 600;
+    color: #18440a;
+}
+.mld-resource-top-section .mld-top-section-heading {
+    margin-bottom: 25px;
+    color: #18440a;
+    font-size: 20px;
+}
+.mld-resource-btn {
+    width: 22%;
+    background: #fcb408;
+    background: #fcb408;
+    padding: 10px;
+    border-radius: 12px;
+    margin-right: 3%;
+    text-align: center;
+}
+.mld-top-inner-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+.mld-resource-program,
+.mld-resource-subject-wrapper,
+.mld-exam-wrapper,
+.mld-resource-answer-wrapper {
+    width: 95%;
+    margin: auto;
+}
+.mld-notification-section {
+    background: #FBFBFB !important;
+}
+/** end top section UI **/
+
+@media screen and (max-width: 1000px) {
+
+    .mld-top-inner-section .mld-resource-btn {
+        width: 47%;
+        margin-bottom: 10px;
+    }
+    .mld-resources-wrapper .mld-proceed-btn {
+        width: 30%;
+        margin-left: 70%;
+    }
+    .mld-resources-wrapper .mld-resource-paper,
+    .mld-resources-wrapper .mld-resource-exam,
+    .mld-resource-subject-wrapper .mld-resource-subject,
+    .mld-resource-subject-wrapper .mld-resource-type,
+    .mld-resources-wrapper .mld-resource-exam,
+    .mld-resources-wrapper .mld-resource-top-section,
+    .mld-resources-wrapper select,
+    .mld-resource-top-main-section,
+    .mld-resourse-content-section,
+    .mld-resource-answer-main-wrapper,
+    #mld-program-dropdown,
+    #resource-answer-dropdown {
+        width: 100%;
+    }
+    .mld-popup-header .resource-mld-header-title {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .mld-resources-wrapper .mld-proceed-btn {
+        width: 50%;
+        margin-left: 50%;
+    }
+    .mld-popup-header .mld-close {
+        width: 20%;
+    }
+    .mld-pop-inner .mld-download-wrapper {
+        margin-top: 9%;
+    }
+    .mld-pop-inner.mld-resource-popup-inner {
+        width: 80%;
+    }
+
+}
+@media screen and (max-width: 600px){
+
+    .mld-top-inner-section .mld-primary-section {
+        width: 100%;
+        float: none;
+/*        margin-bottom: 30px;*/
+    }
+    .mld-top-inner-section .mld-secondary-section {
+        width: 100%;
+        float: none;
+/*        text-align: inherit;*/
+    }
+    .mld-top-inner-section .mld-primary-section a,
+    .mld-top-inner-section .mld-secondary-section a {
+        width: 100%;
+    }
+    .mld-top-inner-section .mld-primary-section a {
+        padding: 12px 96px;
+    }
+    .mld-top-inner-section .mld-secondary-section a {
+        padding: 12px 87px;
+    }
+}
+@media screen and (max-width: 450px){
+    .mld-top-inner-section .mld-primary-section a {
+        padding: 12px 50px;
+    }
+    .mld-top-inner-section .mld-secondary-section a {
+        padding: 12px 41px;
+    }
+}
+
+/** end popup css **/
