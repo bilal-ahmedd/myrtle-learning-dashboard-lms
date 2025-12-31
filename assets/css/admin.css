@@ -1,0 +1,745 @@
+.mld-time-label .mld-chat-update-time{
+    margin: 0 0 0 32px;
+}
+.mld-time-unit {
+    width: 172px;
+}
+.chat-settings-wrapper {
+    margin-bottom: 20px;
+}
+.chat-settings-wrapper .mld-chat-update-time,
+.chat-settings-wrapper .mld-time-unit {
+    border: unset;
+    outline: 1px solid #d4d4d4;
+    padding: 5px !important;
+}
+.mld-chat-submit {
+    margin-top: 50px !important;
+    padding: 5px 14px !important;
+}
+.chat-settings-grand-wrapper span.select2-container {
+    width: 26% !important;
+    position: absolute;
+}
+.select2-selection--single {
+    min-height: 35px !important;
+}
+.select2-selection--single .select2-selection__rendered {
+    padding-top: 6px !important;
+}
+.select2-container .select2-search--inline .select2-search__field {
+    width: 200px !important;
+    max-width: 200px !important;
+}
+.chat-settings-wrapper label,
+.mld-select-users-fields label {
+    display: block;
+    padding: 0 30px 0 0;
+    font-weight: 600;
+}
+.chat-settings-wrapper label,
+.mld-select-users-fields label {
+    vertical-align: middle;
+}
+.mld-select-users-fields {
+    margin-bottom: 30px;
+}
+.mld-staff-edit-wrapper {
+    border: 6px solid #e4e4e4;
+    border-radius: 12px;
+    padding: 20px;
+}
+.mld-form-field label,
+.mld-edit-form-field label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #18440a;
+}
+.mld-single-form-wrapper {
+    margin-bottom: 20px;
+}
+.mld-form-field select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e4e4e4;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    max-width: 100% !important;
+}
+.mld-form-fields-wrapper .mld-form-field {
+    width: 40%;
+}
+.mld-form-field input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #e4e4e4;
+}
+.mld-personal-statement {
+    width: 100%;
+}
+.mld-statement-label {
+    font-size: 20px;
+    font-weight: 600;
+}
+.mld-registration-table button {
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: 1px solid #18440a !important;
+    font-size: 20px;
+    background-color: #18440a;
+    color: white;
+}
+.mld-college-education,
+.mld-university-education,
+.mld-experience-years {
+    width: 100% !important;
+    margin-top: 20px;
+}
+.mld-college-education th,
+.mld-college-education td,
+.mld-university-education th,
+.mld-university-education td,
+.mld-experience-years th,
+.mld-experience-years td {
+    border: 2px solid #e4e4e4 !important;
+}
+.mld-college-education th,
+.mld-experience-years th,
+.mld-university-education th {
+    padding: 10px !important;
+}
+.mld-experience-years select {
+    width: 100%;
+    padding: 10px;
+}
+.mld-college-education th, 
+.mld-university-education th,
+.mld-experience-years th {
+    background-color: #18440a;
+    color: white;
+    font-weight: bold;
+}
+.mld-university-education {
+    margin-bottom: 10px;
+}
+.mld-edit-staff-update-btn button {
+    padding: 10px 20px;
+    border: 2px solid #fcb408;
+    border-radius: 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: #fcb408;
+    color: #18440a;
+}
+.mld-college-education .mld-delete-table-row,
+.mld-university-education .mld-delete-table-row,
+.mld-experience-years .mld-delete-table-row {
+    color: red;
+    cursor: pointer;
+}
+.mld-college-education tbody td,
+.mld-university-education tbody td,
+.mld-experience-years tbody td {
+    text-align: center;
+}
+.mld-new-row button {
+    background: unset;
+    color: #18440a !important;
+    padding: unset;
+    margin-bottom: 10px;
+    float: right;
+    text-decoration: underline;
+    font-weight: 600;
+    border: unset;
+    border: none !important;
+    cursor: pointer;
+}
+.mld-college-education input[type="date"],
+.mld-university-education input[type="date"] {
+    width: 100%;
+    height: 45px;
+}
+.mld-approved-teacher-wrapper {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.mld-availability {
+    margin-top: 10px;
+}
+.mld-college-education td input,
+.mld-university-education td input,
+.mld-experience-years td select {
+    border: unset !important;
+}
+.mld-dashicon {
+    color: red;
+    margin-top: -15px;
+    float: right;
+    cursor: pointer;
+}
+.mld-update-teacher-form {
+    margin-top: 20px !important;
+}
+.mld-teacher-inner-wrapper {
+    background: #e4e4e4;
+    padding: 10px 0 10px 20px;
+    margin-top: 20px;
+    width: 400px;
+}
+
+.mld-refrence-form-wrapper .mld-filled-data {
+    font-weight: 600;
+}
+.mld-refrence-form-wrapper .mld-answer-box input {
+    width: 100%;
+    border: unset;
+    background: unset;
+}
+.mld-add-another-referr {
+    cursor: pointer;
+    font-weight: 600;
+}
+.mld-refrence-form-wrapper {
+    border: unset;
+}
+.mld-refrence-form-wrapper tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.mld-refrence-form-wrapper tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+.mld-refree-heading {
+    background-color: #365249 !important;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+.mld-first-label {
+    border-top: 4px solid #365249;
+    border-right: 3px solid #e4e4e4;
+    border-left: unset;
+    border-bottom: unset;
+}
+.mld-general-data {
+    border-top: unset;
+    border-right: 3px solid #e4e4e4;
+    border-left: unset;
+    border-bottom: unset;
+}
+.mld-last-label {
+    border-top: unset;
+    border-right: 3px solid #e4e4e4;
+    border-left: unset;
+    border-bottom: 4px solid #365249;
+}
+.mld-first-answer {
+    border-top: 4px solid #365249;
+    border-bottom: unset;
+    border-right: unset;
+    border-left: unset;
+}
+.mld-general-answer {
+    border: unset;
+}
+.mld-last-answer {
+    border-top: unset;
+    border-bottom: 4px solid #365249;
+    border-right: unset;
+    border-left: unset;
+}
+.mld-empty-row {
+    height: 2px;
+}
+.mld-refree-heading {
+    text-align: left;
+}
+.mld-ref-submit,
+.mld-applicent-submit {
+    float: right;
+    background-color: #fcb408 !important;
+    color: white !important;
+}
+.mld-ref-submit:hover,
+.mld-applicent-submit:hover {
+    background-color: #fcb408 !important;
+    color: white !important;
+}
+.mld-clear-both {
+    clear: both;
+}
+/** start second form css **/
+.mld-applicent-label {
+    float: left;
+    width: 30%;
+}
+.mld-applicent-label,
+.mld-experience-label,
+.mld-information-label,
+.mld-job-title-label,
+.mld-time-period-label,
+.mld-applicent-capacity-label,
+.mld-organization-title-label,
+.mld-job-duties-label,
+.mld-applicent-work-behaviour-label,
+.mld-label,
+.mld-applicent-trustworthy-label,
+.mld-applicent-duty-care-label,
+.mld-applicent-disciplinary-warnings-label,
+.mld-leaving-reasons-label,
+.mld-re-employ-applicent-label,
+.mld-applicent-job-describe-label,
+.mld-applicent-specification-label,
+.mld-applicent-work-with-children-label,
+.mld-applicent-work-with-children-answer-label,
+.mld-applicent-further-comment-label {
+    background-color: #365249;
+    color: white;
+}
+.mld-label {
+    padding: 10px;
+}
+.mld-start-date,
+.mld-end-date,
+.mld-salary {
+    padding: 13px 0 0 13px;
+}
+.mld-start-date input,
+.mld-end-date input,
+.mld-salary input {
+    border: unset;
+}
+.mld-applicent-data {
+    float: right;
+    width: 70%;
+}
+.mld-min-height {
+    height: 50px;
+}
+.mld-applicent-data,
+.mld-experience-data {
+    background-color: white;
+    border-top: 2px solid #365249;
+    border-bottom: 2px solid #365249;
+}
+.mld-form-applicent {
+    border-bottom: 3px solid white;
+}
+.mld-experience-label,
+.mld-applicent-trustworthy-label,
+.mld-applicent-duty-care-label,
+.mld-applicent-disciplinary-warnings-label,
+.mld-re-employ-applicent-label,
+.mld-applicent-job-describe-label,
+.mld-applicent-work-with-children-label {
+    float: left;
+    width: 70%;
+    color: white;
+}
+.mld-experience-data,
+.mld-applicent-trustworthy-data,
+.mld-applicent-duty-care-data,
+.mld-applicent-disciplinary-warnings-data,
+.mld-re-employ-applicent-data,
+.mld-applicent-job-describe-data,
+.mld-applicent-work-with-children-data {
+    float: right;
+    width: 30%;
+}
+.mld-applicent-information,
+.mld-job-title,
+.mld-time-period,
+.mld-applicent-capacity,
+.mld-organization-title,
+.mld-job-duties,
+.mld-applicent-work-behaviour,
+.mld-applicent-disciplinary-warnings,
+.mld-applicent-trustworthy,
+.mld-applicent-duty-care,
+.mld-leaving-reasons,
+.mld-re-employ-applicent,
+.mld-applicent-job-describe,
+.mld-applicent-specification,
+.mld-applicent-work-with-children,
+.mld-applicent-work-with-children-answer,
+.mld-applicent-further-comment,
+.mld-organization-table {
+    margin-top: 5px;
+}
+.mld-applicent-information-data .mld-start-date,
+.mld-applicent-information-data .mld-end-date,
+.mld-applicent-information-data .mld-salary {
+    width: 33.33%;
+    background-color: white;
+}
+.mld-applicent-information-data .mld-start-date,
+.mld-applicent-information-data .mld-end-date {
+    border-right: 2px solid #365249;
+}
+.mld-applicent-information-data {
+    display: flex;
+}
+.mld-job-title-data,
+.mld-time-period-data,
+.mld-applicent-capacity-data,
+.mld-organization-title-data,
+.mld-job-duties-data,
+.mld-applicent-trustworthy-data,
+.mld-applicent-duty-care-data,
+.mld-applicent-disciplinary-warnings-data,
+.mld-leaving-reasons-data,
+.mld-re-employ-applicent-data,
+.mld-applicent-job-describe-data,
+.mld-applicent-specification-data,
+.mld-applicent-work-with-children-data,
+.mld-applicent-work-with-children-answer,
+.mld-applicent-further-comment-data,
+.mld-name,
+.mld-sign,
+.mld-date,
+.mld-telephone,
+.mld-stamp,
+.quality-answer,
+.quantity-work,
+.job-dedication,
+.ability-of-work,
+.working-relationship,
+.time-keeping {
+    background-color: white;
+}
+.mld-refrence-form-wrapper,
+.mld-applicent-work-bahaviour-data table {
+    width: 100%;
+}
+.mld-main-wrapper {
+    margin-top: 20px;
+}
+.mld-information-label p,
+.mld-job-title-label p,
+.mld-time-period-label p,
+.mld-applicent-capacity-label p,
+.mld-organization-title-label p,
+.mld-job-duties-label p,
+.mld-applicent-work-behaviour-label p,
+.mld-leaving-reasons-label p,
+.mld-applicent-work-with-children-answer-label p,
+.mld-applicent-further-comment-label p,
+.mld-applicent-specification-label p {
+    padding-top: 15px;
+}
+.mld-job-title-data p,
+.mld-time-period-data p,
+.mld-applicent-capacity-data p,
+.mld-organization-title-data p,
+.mld-job-duties-data p,
+.mld-leaving-reasons-data p,
+.mld-applicent-specification-data p,
+.mld-applicent-work-with-children-answer-data p, 
+.mld-applicent-further-comment-data p {
+    margin-top: unset;
+    padding-top: 15px;
+}
+.mld-main-wrapper p {
+    padding-left: 10px;
+}
+input.mld-experience-yes,
+input.mld-experience-no,
+input.mld-trustworthy-yes,
+input.mld-trustworthy-no,
+input.mld-duty-care-yes,
+input.mld-duty-care-no,
+input.mld-disciplinary-warnings-yes,
+input.mld-disciplinary-warnings-no,
+input.mld-re-employ-yes,
+input.mld-re-employ-no,
+input.mld-job-describe-yes,
+input.mld-job-describe-no,
+input.mld-work-with-children-yes,
+input.mld-work-with-children-no {
+    width: 23px;
+    height: 20px;
+}
+.mld-refrence-form-wrapper th,
+.mld-refrence-form-wrapper td {
+    padding: 10px;
+}
+.mld-sign img, 
+.mld-stamp img {
+    height: 50px;   
+}
+.mld-refree-wrapper {
+    margin: 19px 0;
+}
+.mld-refree-wrapper-inner {
+    background: #ffb207;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+}
+.mld-refree-wrapper-inner:hover {
+    color: white;
+}
+
+/**
+ * bank detail form UI
+ */
+.mld-list-a-wrapper input,
+.mld-list-b-wrapper input {
+  height: 20px;
+  width: 20px;
+  vertical-align: sub;
+}
+.mld-bank-detail-submit-btn {
+  float: right;
+  background: #ffb207 !important;
+  color: white !important;
+  cursor: pointer;
+}
+.mld-bank-detail-submit-btn:hover{
+  background: #ffb207 !important;
+  color: white !important;
+}
+.mld-padding {
+  padding: 10px;
+}
+.mld-list-a-wrapper ul,
+.mld-list-b-wrapper ul {
+  list-style: auto;
+}
+.mld-righr-to-work-list li,
+.mld-list-a {
+  font-weight: 600;
+}
+.mld-personal-detail-wrapper,
+.mld-personal-detail-wrapper .mld-pd-row1,
+.mld-personal-detail-wrapper .mld-pd-row2,
+.mld-personal-detail-wrapper .mld-pd-row3,
+.mld-bank-detail-row1,
+.mld-bank-detail-row2,
+.mld-bank-detail-row3,
+.mld-internal-use-wrapper {
+  width: 100%;
+}
+.mld-pd-title-wrapper .mld-pd-title,
+.mld-pd-title-wrapper .mld-pd-title-data,
+.mld-pd-forename-wrapper .mld-pd-forename,
+.mld-pd-forename-wrapper .mld-pd-forename-data,
+.mld-pd-surname-wrapper .mld-pd-surname,
+.mld-pd-surname-wrapper .mld-pd-surname-data,
+.mld-pd-ni-number-wrapper .mld-pd-ni-number,
+.mld-pd-ni-number-wrapper .mld-pd-ni-number-data,
+.mld-pd-dob-wrapper .mld-pd-dob,
+.mld-pd-dob-wrapper .mld-pd-dob-data,
+.mld-pd-home-address-wrapper .mld-pd-home-address,
+.mld-pd-home-address-wrapper .mld-pd-home-address-data,
+.mld-pd-home-email-wrapper .mld-pd-home-email,
+.mld-pd-home-email-wrapper .mld-pd-home-email-data,
+.mld-pd-mobile-number-wrapper .mld-pd-mobile-number,
+.mld-pd-mobile-number-wrapper .mld-pd-mobile-number-data,
+.mld-pd-subjects-wrapper .mld-pd-subjects,
+.mld-pd-subjects-wrapper .mld-pd-subjects-data,
+.mld-bd-b-name-wrapper .mld-bd-name,
+.mld-bd-b-name-wrapper .mld-bd-name-data,
+.mld-bd-b-account-name-wrapper .mld-bd-account-name,
+.mld-bd-b-account-name-wrapper .mld-bd-account-name-data,
+.mld-bd-sort-code-wrapper .mld-bd-sort-code,
+.mld-bd-sort-code-wrapper .mld-bd-sort-code-data,
+.mld-bd-b-account-number-wrapper .mld-bd-b-account-number,
+.mld-bd-b-account-number-wrapper .mld-bd-b-account-number-data,
+.mld-bd-bank-address-data,
+.mld-bd-bank-address,
+.mld-certificate-dob,
+.mld-certificate-dob-data,
+.mld-current-yn,
+.mld-current-yn-data,
+.mld-certificate-number,
+.mld-certificate-number-data,
+.mld-certificate-surname,
+.mld-certificate-surname-data,
+.mld-internal-use,
+.mld-internal-use-data {
+  border: 1px solid black;
+}
+.mld-pd-title-wrapper,
+.mld-pd-forename-wrapper,
+.mld-pd-surname-wrapper,
+.mld-pd-ni-number,
+.mld-pd-dob,
+.mld-pd-home-address,
+.mld-pd-home-address,
+.mld-pd-mobile-number,
+.mld-pd-home-email,
+.mld-pd-subjects,
+.mld-bd-sort-code,
+.mld-bd-b-account-number,
+.mld-bd-account-name,
+.mld-bd-name,
+.mld-bd-bank-address,
+.mld-certificate-number,
+.mld-certificate-surname,
+.mld-current-yn,
+.mld-certificate-dob,
+.mld-internal-use {
+  width: 33.33%;
+}
+.mld-pd-ni-number-data,
+.mld-pd-dob-data,
+.mld-pd-home-address-data,
+.mld-pd-home-address-data,
+.mld-pd-mobile-number-data,
+.mld-pd-home-email-data,
+.mld-pd-subjects-data,
+.mld-bd-sort-code-data,
+.mld-bd-b-account-number-data,
+.mld-bd-name-data,
+.mld-bd-account-name-data,
+.mld-bd-bank-address-data,
+.mld-certificate-number-data,
+.mld-certificate-surname-data,
+.mld-current-yn-data,
+.mld-certificate-dob-data,
+.mld-internal-use-data {
+  width: 66.67%;
+}
+.mld-pd-title,
+.mld-pd-title-data,
+.mld-pd-forename,
+.mld-pd-forename-data,
+.mld-pd-surname,
+.mld-pd-surname-data,
+.mld-pd-ni-number-wrapper,
+.mld-pd-dob-wrapper,
+.mld-pd-home-email-wrapper,
+.mld-pd-mobile-number-wrapper,
+.mld-bd-b-name-wrapper,
+.mld-bd-b-account-name-wrapper,
+.mld-bd-sort-code-wrapper,
+.mld-bd-b-account-number-wrapper,
+.mld-certificate-number-wrapper,
+.mld-certificate-surname-wrapper,
+.mld-current-yn-wrapper,
+.mld-certificate-dob-wrapper {
+  width: 50%;
+}
+.mld-pd-row1,
+.mld-pd-title-wrapper,
+.mld-pd-forename-wrapper,
+.mld-pd-surname-wrapper,
+.mld-pd-row2,
+.mld-pd-ni-number-wrapper,
+.mld-pd-dob-wrapper,
+.mld-pd-home-address-wrapper,
+.mld-pd-home-address-wrapper,
+.mld-pd-row4,
+.mld-pd-home-email-wrapper,
+.mld-pd-mobile-number-wrapper,
+.mld-pd-subjects-wrapper,
+.mld-bank-detail-row1,
+.mld-bank-detail-row2,
+.mld-bd-b-name-wrapper,
+.mld-bd-b-account-name-wrapper,
+.mld-bd-sort-code-wrapper,
+.mld-bd-b-account-number-wrapper,
+.mld-bd-bank-address-wrapper,
+.mld-disclosure-service-row1,
+.mld-disclosure-service-row2,
+.mld-disclosure-service-row3,
+.mld-certificate-number-wrapper,
+.mld-certificate-surname-wrapper,
+.mld-current-yn-wrapper,
+.mld-certificate-dob-wrapper,
+.mld-internal-use-wrapper {
+  display: flex;
+}
+.mld-certificate-surname,
+.mld-certificate-dob,
+.mld-bd-account-name {
+  line-height: 1;
+}
+.mld-error-msg {
+  color: red;
+  font-weight: 600;
+  text-align: center;
+  display: none;
+}
+.mld-human-resources-table,
+.mld-signature-table {
+    width: 100%;
+}
+.mld-list-b-wrapper,
+.mld-list-a-wrapper {
+    padding: 12px;
+}
+.mld-resource-signatur,
+.mld-signature {
+    text-align: center;
+}
+.mld-edit-icon {
+    float: right;
+    margin-top: -16px;
+    cursor: pointer;
+}
+.resour-update-btn {
+  margin-top: 20px;
+}
+.resour-update-btn button {
+  padding: 10px 20px;
+  border: 2px solid #fcb408;
+  border-radius: 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: #fcb408;
+  color: #18440a;
+}
+.mld-resource-name {
+    text-align: center;
+}
+.mld-resource-date input {
+    width: 100%;
+}
+.mld-delete-resource_sign {
+    cursor: pointer;
+    color: red;
+}
+.mld-communication-update-btn {
+    display: none;
+}
+.mld-communication-update-btn button,
+.mld-communication-edit,
+.mld-communication-trash {
+    cursor: pointer;
+}
+.mld-communication-trash {
+    color: red;
+}
+.mld-message-reference {
+  font-weight: 600;
+  color: #18440a;
+}
+.mld-message { 
+  padding: 10px 0 5px 0;
+}
+.mld-communication-edit {
+    margin-left: 10px;
+}
+.mld-communication-update-btn button {
+    padding: 7px;
+    margin: 10px;
+    border-radius: 12px;
+    border: unset;
+    background: #18440a;
+    color: white;
+}
+.mld-communication-wrapper-backend {
+    overflow: auto;
+}
+.mld-update-avatar {
+    width: 50px !important;
+    height: 50px !important;
+    object-fit: cover;
+    border-radius: 50%;
+}
