@@ -50,15 +50,26 @@ class Myrtle_Staff {
 		add_action( 'wp_ajax_accept_pending_student_user', [ $this, 'mld_accept_pending_student_user' ] );
 		add_action( 'wp_ajax_deny_pending_student_user', [ $this, 'mld_deny_pending_student_user' ] );
 		add_filter( 'exms_dashboard_tabs', [ $this, 'exms_my_staff_tab' ] );
+		add_action( 'exms_dashboard_tab_content_mld_my_staff', [ $this, 'render_staff_tab_content' ] );
 	}
 
 	public function exms_my_staff_tab( $tabs ) {
 
-		$tabs['exms_my_staff'] = array(
+		$tabs['mld_my_staff'] = array(
 			'label' => __( 'My Staff Profile', 'exms' ),
 			'icon'  => 'dashicons-admin-users',
 		);
 		return $tabs;
+	}
+
+	public function render_staff_tab_content() {
+
+		if( file_exists( MLD_TEMPLATES_DIR . 'staff-module/mld-staff-template.php' ) ) {
+			require MLD_TEMPLATES_DIR . 'staff-module/mld-staff-template.php';
+		}
+		if( file_exists( MLD_TEMPLATES_DIR . 'staff-module/mld-staff-details-template.php' ) ) {
+			require MLD_TEMPLATES_DIR . 'staff-module/mld-staff-details-template.php';
+		}
 	}
 
 	/**
