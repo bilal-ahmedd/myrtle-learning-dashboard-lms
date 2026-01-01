@@ -56,15 +56,23 @@ class Myrtle_Work_Template {
 		add_shortcode( 'mld-work', [ $this, 'mld_work_callback' ] );
 		add_action( 'wp_enqueue_scripts', [ $this, 'mld_enqueue_scripts' ] );
 		add_filter( 'exms_dashboard_tabs', [ $this, 'exms_my_work_tab' ] );
+		add_action( 'exms_dashboard_tab_content_mld_my_work', [ $this, 'render_work_tab_content' ] );
 	}
 	
 	public function exms_my_work_tab( $tabs ) {
 
-		$tabs['exms_my_work'] = array(
+		$tabs['mld_my_work'] = array(
 			'label' => __( 'My Work', 'exms' ),
 			'icon'  => 'dashicons-networking',
 		);
 		return $tabs;
+	}
+
+	public function render_work_tab_content() {
+
+		if( file_exists( MLD_TEMPLATES_DIR . 'work/mld-work-template.php' ) ) {
+			require MLD_TEMPLATES_DIR . 'work/mld-work-template.php';
+		}
 	}
 
 	/**
@@ -72,7 +80,6 @@ class Myrtle_Work_Template {
 	 */
 	public function mld_enqueue_scripts() {
 
-		if( 'works' == FRONT_PAGE ) {
 
 			wp_enqueue_editor();
 			wp_enqueue_media();
@@ -84,7 +91,6 @@ class Myrtle_Work_Template {
 				'ajaxURL'       => admin_url( 'admin-ajax.php' ),
 				'security'      => wp_create_nonce( 'mld_ajax_nonce' )
 			] );
-		}
 	}
 
 	/**
