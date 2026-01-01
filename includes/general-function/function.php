@@ -110,21 +110,21 @@ function mld_get_user_courses( $user_id ) {
 /**
  * create a function to get group users
  */
-function mld_get_group_users( $group_id ) {
+// function mld_get_group_users( $group_id ) {
 
-	global $wpdb;
+// 	global $wpdb;
 
-	$meta_key = 'learndash_group_users_'.$group_id;
+// 	$meta_key = 'learndash_group_users_'.$group_id;
 
-	$query = $wpdb->prepare(
-		"SELECT user_id 
-		FROM {$wpdb->usermeta} 
-		WHERE meta_key = %s",
-		$meta_key
-	);
+// 	$query = $wpdb->prepare(
+// 		"SELECT user_id 
+// 		FROM {$wpdb->usermeta} 
+// 		WHERE meta_key = %s",
+// 		$meta_key
+// 	);
 	
- 	return $wpdb->get_col($query);
- }
+//  	return $wpdb->get_col($query);
+//  }
 
 /**
  * create a function to get user capability array
@@ -324,5 +324,74 @@ function mld_get_category_files( $category ) {
 	$directory_path = $upload_dir['basedir'] . '/'.$category;
 	$files = glob($directory_path . '/*');
 	return $files;
+}
+
+/**
+ * create a function to get user enrolled group
+ */
+function mld_get_user_enrolled_group( $user_id, $limit = 0 ) {
+
+    global $wpdb;
+
+    if( ! $user_id ) {
+        return;
+    }
+
+    $group_ids = [];
+    $post_type = 'exms-groups';
+    
+    if( current_user_can( 'administrator' ) ) {
+
+        $group_ids = get_posts( array(
+            'post_type'      => $post_type,
+            'posts_per_page' => -1,
+            'post_status'    => 'publish',
+            'fields'         => 'ids',
+            'posts_per_page' => ( $limit > 0 ) ? absint( $limit ) : -1,
+        ) );
+    } else {
+
+        $table_name = $wpdb->prefix . 'exms_user_enrollments';
+        
+        $query = $wpdb->prepare(
+            "SELECT DISTINCT post_id
+            FROM {$table_name}
+            WHERE user_id = %d
+            AND post_type = %s",
+            $user_id,
+            $post_type
+        );
+
+        // ✅ limit apply only if provided
+        if ( $limit > 0 ) {
+            $query .= $wpdb->prepare( " LIMIT %d", absint( $limit ) );
+        }
+
+        $group_ids = $wpdb->get_col( $query );
+    }
+
+    return $group_ids;
+}
+
+function mld_get_group_users( $group_id ) {
+
+    global $wpdb;
+
+    $table_name = $wpdb->prefix . 'exms_user_enrollments';
+
+    $user_ids = $wpdb->get_col(
+        $wpdb->prepare(
+            "SELECT user_id 
+            FROM $table_name 
+            WHERE type = %s 
+            AND post_type = %s 
+            AND post_id = %d",
+            'student',
+            'exms-groups',
+            $group_id
+        )
+    );
+
+    return $user_ids;
 }
 ?>
