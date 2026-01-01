@@ -55,16 +55,29 @@ class MLD_CHAT_MODULE {
 
 	public function render_chat_tab_content() {
 
-		// $user_id   = get_current_user_id();
-		// $userdata  = get_userdata( $user_id );
+		$user_id   = get_current_user_id();
+		$group_ids  = mld_get_user_enrolled_group( $user_id ); // ex: array('27')
 
-		// $category = 'student';
-		// if ( $userdata && in_array( 'exms_group_leader', (array) $userdata->roles, true ) ) {
-		// 	$category = 'teacher';
-		// }
-		// if ( $userdata && in_array( 'administrator', (array) $userdata->roles, true ) ) {
-		// 	$category = 'admin';
-		// }
+		if( empty( $group_ids ) || ! is_array( $group_ids ) ) {
+			$group_ids = [];
+		}
+
+		$groups = [];
+		foreach( $group_ids as $gid ) {
+			$gid = absint( $gid );
+			if ( ! $gid ) { continue; }
+
+			$title = get_the_title( $gid );
+			if( empty( $title ) ) {
+				$title = sprintf( __( 'Group #%d', 'myrtle-learning-dashboard' ), $gid );
+			}
+
+			$groups[] = [
+				'id'    => $gid,
+				'title' => $title,
+			];
+		}
+
 
 		if( file_exists( MLD_TEMPLATES_DIR . 'mld-student-chat-template.php' ) ) {
 			require MLD_TEMPLATES_DIR . 'mld-student-chat-template.php';

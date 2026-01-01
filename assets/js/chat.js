@@ -172,174 +172,193 @@
                 } );
             },
 
-            /**
-             * Change current user chane
-             */
-            changeCurrentUserChat: function() {
 
-                $( document ).on( 'click', '.mld-single-user-wrap', function() {
+/**
+ * Change current user chat
+ */
+changeCurrentUserChat: function() {
 
-                    let self = $(this);
-                    let groupID = self.data( 'group_id' );
-                    let loggedInUser = self.data( 'loggin_user' );
-                    let chatUser = self.data( 'chat_user' );
-                    let chatType = self.data( 'chat_type' );
-                    let screenWidth = window.innerWidth;
-                    $( '.mld-chat-msgs' ).css( 'filter', 'blur(2.5px)' );
+  $(document).on('click', '.mld-user-row', function() {
 
-                    let userName = self.find( '.mld-user-message-wrapper .mld-usrename' ).text();
-                    let profileUrl = self.find( '.mld-user-wrapper .mls-user-avatar img' ).attr( 'src' );
-                    let srcset = self.find( '.mld-user-wrapper .mls-user-avatar img' ).attr( 'srcset' );
-                    let userHeader = $( '.mld-chat-header' );
-                    userHeader.find( '.mld-usrename' ).html( userName );
-                    userHeader.find( '.mld-user-avatar img' ).attr( 'src', profileUrl );
-                    userHeader.find( '.mld-user-avatar img' ).attr( 'srcset', srcset );
-                    $( document ).find( '.mld-chat-box' ).find( 'input[name=groupID]' ).val( groupID );
-                    $( document ).find( '.mld-chat-box' ).find( 'input[name=loggedInUser]' ).val( loggedInUser );
-                    $( document ).find( '.mld-chat-box' ).find( 'input[name=chatUser]' ).val( chatUser );
-                    $( document ).find( '.mld-chat-box' ).find( 'input[name=chatType]' ).val( chatType );
+    let self         = $(this);
+    let groupID      = self.data('group-id');
+    let loggedInUser = self.data('logged_user');
+    let chatUser     = self.data('chat-user');
+    let chatType     = self.data('chat_type');
+    let screenWidth  = window.innerWidth;
 
+    // Blur right-side chat body (template uses .mld-chat-body / #mldChatBody)
+    $('#mldChatBody').css('filter', 'blur(2.5px)');
 
-                    let updatedChat = MLD_CHAT.getUpdatedChat( groupID, loggedInUser, chatUser, chatType );
-                    
-                    if( 950 == screenWidth || screenWidth < 950 ) {
+    // OPTIONAL: If your left user row has name/avatar inside it, you can update header here
+    // (won't break if elements aren't present)
+    let userName   = self.find('.mld-chat-top-name').first().text();
+    let profileUrl = self.find('img').first().attr('src');
 
-                        $( '.mld-chat-users' ).hide();
-                        $( '.mld-chatbox' ).show();
-                    }
+    if (userName) $('.mld-chat-top-name').text(userName);
+    if (profileUrl) $('.mld-chat-top-avatar').attr('src', profileUrl);
 
-                    $( '.mld-chatbox' ).css( 'background', '#ffffff' );
-                    $( '.mld-chat-starter' ).hide();
-                    $( '.mld-chatbox .mld-chat-box' ).show();
-                    $( '.mld-notification-icon' ).hide();
-                    
-                    setTimeout( function() {
-                        let messageCount = $('.mld-chat-msg-wrap').length;
-                       
-                        if( messageCount == 19 || messageCount > 19 ) {
-                            $( '.mld-load-more-btn' ).show();
-                        }
-                    }, 5000 );
-                } );
-            },
+    // Fetch updated chat
+    MLD_CHAT.getUpdatedChat(groupID, loggedInUser, chatUser, chatType);
 
-            /**
-             * Return updated chat data
-             *
-             * @returns {boolean}
-             */
-            getUpdatedChat: function( groupID = '', loggedInUser = '', chatUser = '', chatType = '' ) {
+    if (950 == screenWidth || screenWidth < 950) {
+      $('.mld-chat-users').hide();
+      $('.mld-chatbox').show();
+    }
 
-                let parent = $( document ).find( '.mld-chatbox-container' );
+    $('.mld-chatbox').css('background', '#ffffff');
+    $('.mld-chat-starter').hide();
+    $('.mld-chatbox .mld-chat-box').show();
+    $('.mld-notification-icon').hide();
 
-                if( '' == groupID ) {
-                    groupID = parent.find( 'input[name=groupID]' ).val();
-                }
+    setTimeout(function() {
+      let messageCount = $('.mld-msg').length; // template uses .mld-msg per message
+      if (messageCount >= 19) {
+        $('.mld-load-more-btn').show();
+      }
+    }, 5000);
 
-                if( '' == loggedInUser ) {
-                    loggedInUser = parent.find( 'input[name=loggedInUser]' ).val();
-                }
+  });
+},
 
-                if( '' == chatUser ) {
-                    chatUser = parent.find( 'input[name=chatUser]' ).val();
-                }
+/**
+ * Return updated chat data
+ *
+ * @returns {boolean}
+ */
+getUpdatedChat: function(groupID = '', loggedInUser = '', chatUser = '', chatType = '') {
 
-                if( '' == chatType ) {
-                    chatType = parent.find( 'input[name=chatType]' ).val();
-                }
+  // No inputs in template, so fall back to stored state
+  if ('' == groupID)      groupID      = (MLD_CHAT.current && MLD_CHAT.current.groupID)      ? MLD_CHAT.current.groupID      : '';
+  if ('' == loggedInUser) loggedInUser = (MLD_CHAT.current && MLD_CHAT.current.loggedInUser) ? MLD_CHAT.current.loggedInUser : '';
+  if ('' == chatUser)     chatUser     = (MLD_CHAT.current && MLD_CHAT.current.chatUser)     ? MLD_CHAT.current.chatUser     : '';
+  if ('' == chatType)     chatType     = (MLD_CHAT.current && MLD_CHAT.current.chatType)     ? MLD_CHAT.current.chatType     : '';
 
-                let chatDetails = {};
+  // If nothing selected yet, do nothing
+  if (!groupID || !loggedInUser) {
+    $('#mldChatBody').css('filter', 'blur(0)');
+    return;
+  }
 
-                $.each( $( '.mld-single-user-wrap' ), function( index, elem ) {
+  let chatDetails = {};
 
-                    chatDetails[index] = {
-                        'chat_user_id'    : $( elem ).attr( 'data-chat_user' ),
-                        'chat_type'       : $( elem ).attr( 'data-chat_type' ),
-                        'last_message_id' : $( elem ).attr( 'data-last_message_id' )
-                    };
-                } );
+  $.each($('.mld-single-user-wrap'), function(index, elem) {
+    chatDetails[index] = {
+      'chat_user_id'    : $(elem).attr('data-chat_user'),
+      'chat_type'       : $(elem).attr('data-chat_type'),
+      'last_message_id' : $(elem).attr('data-last_message_id')
+    };
+  });
 
-                let data = {
-                    'action'          : 'update_live_chat',
-                    'mld_nounce'      : MLD.security,
-                    'group_id'        : groupID,
-                    'loggin_user'     : loggedInUser,
-                    'chat_user'       : chatUser,
-                    'chat_type'       : chatType,
-                    'message_data'    : chatDetails
-                };
+  let data = {
+    'action'       : 'update_live_chat',
+    'mld_nounce'   : MLD.security,
+    'group_id'     : groupID,
+    'loggin_user'  : loggedInUser,
+    'chat_user'    : chatUser,
+    'chat_type'    : chatType,
+    'message_data' : chatDetails
+  };
 
-                jQuery.post( MLD.ajaxURL, data, function( response ) {
+  jQuery.post(MLD.ajaxURL, data, function(response) {
 
-                    let jsonEncode = JSON.parse( response );
+    let jsonEncode = null;
 
-                    if( 'true' == jsonEncode.status ) {
+    try {
+      jsonEncode = (typeof response === 'string') ? JSON.parse(response) : response;
+    } catch (e) {
+      $('#mldChatBody').html('');
+      $('#mldChatBody').css('filter', 'blur(0)');
+      return;
+    }
 
-                        $( '.mld-chat-msgs' ).html( jsonEncode.content );
-                        let chatType = jsonEncode.chatType;
-                        let user_id  = jsonEncode.userId;
-                        let content  = jsonEncode.message;
-                        let lastID   = jsonEncode.id;
+    if ('true' == jsonEncode.status) {
 
-                        if( 'group' == chatType ) {
-                            $( '.mld-notification-'+groupID ).find( '.mld-notification-icon' ).show();
-                            $( '.mld-notification-'+groupID ).find( '.mld-group-last-message' ).html( content );
-                            $( '.mld-notification-'+groupID ).attr( 'data-last_message_id', lastID );
+      // ✅ RIGHT-side template: messages go inside #mldChatBody
+      // Your PHP should return message markup using:
+      // <div class="mld-msg is-left">...</div> / <div class="mld-msg is-right">...</div>
+      $('#mldChatBody').html(jsonEncode.content);
 
-                        } else {
+      // OPTIONAL header updates if backend sends these
+      if (jsonEncode.header_name) $('.mld-chat-top-name').text(jsonEncode.header_name);
+      if (jsonEncode.header_avatar) $('.mld-chat-top-avatar').attr('src', jsonEncode.header_avatar);
+      if (jsonEncode.last_seen) $('.mld-lastseen').text(jsonEncode.last_seen);
+      if (jsonEncode.is_online !== undefined) {
+        $('.mld-online').text(jsonEncode.is_online ? 'Online' : 'Offline');
+      }
 
-                            let chatUserId = parent.find( 'input[name=chatUser]' ).val();
+      let serverChatType = jsonEncode.chatType;
+      let user_id        = jsonEncode.userId;
+      let content        = jsonEncode.message;
+      let lastID         = jsonEncode.id;
 
-                            if( chatUserId != user_id ) {
-                                $( '.mld-notification-'+user_id+'-'+groupID ).find( '.mld-notification-icon' ).show();
-                            }
+      // Keep your existing notification logic intact
+      if ('group' == serverChatType) {
 
-                            $( '.mld-notification-'+user_id+'-'+groupID ).find( '.mld-group-last-message' ).html( content );
-                            $( '.mld-notification-'+user_id+'-'+groupID ).attr( 'data-last_message_id', lastID );
-                        }
-                    } else {
-                        $( '.mld-chat-msgs' ).html( '' );
-                    }
+        $('.mld-notification-' + groupID).find('.mld-notification-icon').show();
+        $('.mld-notification-' + groupID).find('.mld-group-last-message').html(content);
+        $('.mld-notification-' + groupID).attr('data-last_message_id', lastID);
 
-                    $( '.mld-chat-msgs' ).css( 'filter', 'blur(0)' );
+      } else {
 
-                    if( $( '#mld-chat-scrolldown' )[0] ) {
-                        let elem = document.getElementById( 'mld-chat-scrolldown' );
-                        elem.scrollTop = elem.scrollHeight;
-                    }
-                } );
-            },
+        // No inputs now; compare with current state
+        let currentChatUserId = (MLD_CHAT.current && MLD_CHAT.current.chatUser) ? MLD_CHAT.current.chatUser : '';
 
-            /**
-             * update chat on live
-             */
-            liveUpdateChat: function() {
+        if (currentChatUserId != user_id) {
+          $('.mld-notification-' + user_id + '-' + groupID).find('.mld-notification-icon').show();
+        }
 
-                if( undefined == MLD.chat_setings ) {
-                    return;
-                }
-                let time = MLD.chat_setings.time;
-                let unit = MLD.chat_setings.unit;
-                
-                let intervalTime;
-                if( 'second' == unit ) {
-                    intervalTime = time * 1000;
-                } else {
-                    intervalTime = time * 60000;
-                }
+        $('.mld-notification-' + user_id + '-' + groupID).find('.mld-group-last-message').html(content);
+        $('.mld-notification-' + user_id + '-' + groupID).attr('data-last_message_id', lastID);
+      }
 
-                setInterval( function() {
-                    MLD_CHAT.getUpdatedChat();
-                    }, intervalTime
-                );
-            },
+    } else {
+      $('#mldChatBody').html('');
+    }
+
+    // Unblur
+    $('#mldChatBody').css('filter', 'blur(0)');
+
+    // Scroll to bottom (template uses #mldChatBody as the scroll container)
+    let elem = document.getElementById('mldChatBody');
+    if (elem) {
+      elem.scrollTop = elem.scrollHeight;
+    }
+
+  });
+},
+
+/**
+ * update chat on live
+ */
+liveUpdateChat: function() {
+
+  if (undefined == MLD.chat_setings) {
+    return;
+  }
+
+  let time = MLD.chat_setings.time;
+  let unit = MLD.chat_setings.unit;
+
+  let intervalTime;
+  if ('second' == unit) {
+    intervalTime = time * 1000;
+  } else {
+    intervalTime = time * 60000;
+  }
+
+  setInterval(function() {
+    MLD_CHAT.getUpdatedChat(); // uses stored state now
+  }, intervalTime);
+},
+
 
             /**
              * Update users behalf of group changes
              */
             displayTeacherOrUsers: function() {
 
-                $( document ).on( 'change', '.mld-group-field', function() {
+                $( document ).on( 'change', '#mld_group_select', function() {
 
                     let self = $( this );
 
@@ -347,20 +366,23 @@
                         return false;
                     }
 
-                    $( document ).find( '.mld-chat-box' ).find( 'input[name=groupID]' ).val( self.val() );
+                    let chat_type = "";
+                    if ( self.attr('id') == 'mld_group_select' ) {
+                        chat_type = "group";
+                    }
 
                     let data = {
                         'action'          : 'get_group_users',
                         'mld_nounce'      : MLD.security,
                         'group_id'        : self.val(),
-                        'user_id'         : MLD.user_id
+                        'chat_type'       : chat_type,
                     };
 
                     jQuery.post( MLD.ajaxURL, data, function( response ) {
 
                         let jsonEncode = JSON.parse( response );
                         if( 'true' == jsonEncode.status ) {
-                            $( '.mld-chat-users #mld-user-table' ).html( jsonEncode.content ).change();
+                            $( '.mld-chat-users' ).html( jsonEncode.content ).change();
                             
                             $.each( $( '.mld-group-users' ), function( ind, ele ) {
                                 

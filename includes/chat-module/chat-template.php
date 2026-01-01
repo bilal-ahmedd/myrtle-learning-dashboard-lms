@@ -164,7 +164,7 @@ class Myrtle_Chat_Template {
 	 */
 	public function mld_enqueue_scripts() {
 		
-		if( has_shortcode( get_the_content( get_the_ID() ), 'myrtle_chat' ) ) {
+		//if( has_shortcode( get_the_content( get_the_ID() ), 'myrtle_chat' ) ) {
  
 			$rand = rand( 1000000, 1000000000 );
 			wp_enqueue_style( 'chat-css', MLD_ASSETS_URL . 'css/chat.css', [], $rand, null );
@@ -178,7 +178,7 @@ class Myrtle_Chat_Template {
 			] );
 
 			wp_enqueue_script( 'mld-chat-js' );
-		}
+		//}
 	}
 
 	/**
@@ -387,63 +387,59 @@ class Myrtle_Chat_Template {
 			$last_index_id = end( $messages );
 
 			ob_start();
-			?>
-			<button class="mld-load-more-btn" data-group_id="<?php echo $group_id; ?>" data-user_id="<?php echo $loggin_id; ?>" data-chat_type="<?php echo $chat_type; ?>" data-chat_user="<?php echo $chat_user; ?>" data-paged="<?php echo $paged; ?>"><?php echo __( 'Load more', 'myrtle-learning-dashboard' ); ?></button>
-			<?php
-			foreach( $messages as $index => $message ) {
+?>
+<button class="mld-load-more-btn"
+  data-group_id="<?php echo esc_attr( $group_id ); ?>"
+  data-user_id="<?php echo esc_attr( $loggin_id ); ?>"
+  data-chat_type="<?php echo esc_attr( $chat_type ); ?>"
+  data-chat_user="<?php echo esc_attr( $chat_user ); ?>"
+  data-paged="<?php echo esc_attr( $paged ); ?>">
+  <?php echo __( 'Load more', 'myrtle-learning-dashboard' ); ?>
+</button>
 
-				$msg_date = isset( $message->dates ) ? $message->dates : '';
-				$message_id = isset( $message->ID ) ? $message->ID : 0;
-				$prev_index = $index - 1;
-				$prev_doer = isset( $messages[$prev_index]->doer ) ? $messages[$prev_index]->doer : '';
+<?php
+foreach( $messages as $index => $msg_obj ) {
 
-				$doer = isset( $message->doer ) ? intval( $message->doer ) : 0;
+  $msg_date    = isset( $msg_obj->dates ) ? $msg_obj->dates : '';
+  $message_id  = isset( $msg_obj->ID ) ? $msg_obj->ID : 0;
+  $doer        = isset( $msg_obj->doer ) ? intval( $msg_obj->doer ) : 0;
+  $message_txt = isset( $msg_obj->message ) ? $msg_obj->message : '';
 
-				$message = isset( $message->message ) ? $message->message : '';
-				$parent_class = ( $loggin_id == $doer ) ? 'mld-sender-wrapper mld-sender-msg' : 'mld-reciever-wrapper mld-reciever-msg';
-				$child_class = ( $loggin_id == $doer ) ? 'mld-sender' : 'mld-reciever';
-				?>				
-				<div class="mld-chat-msg-wrap">
-					<?php						
-					if( $doer != $prev_doer && $loggin_id != $doer ) {
+  // direction based on logged-in user
+  $is_me = ( $loggin_id == $doer );
 
-						?>
-						<div class="mld-message-user"><?php echo self::$instance->get_user_name( $doer ); ?></div>
-						<?php
-					}
-					?>
-					<div class="mld-chat-date">
-						<button>
-							<?php 
-							echo date( "Y-m-d", $msg_date );
-							?>
-						</button>
-					</div>
-					<div class="<?php echo $parent_class; ?>">
-						<div class="mld-chat-msg <?php echo $child_class;?>">
-							<div class="mld-user-chat">
-								<?php 
-								echo stripslashes( $message );
-								?>
-							</div>
-						</div>
-					</div>
-					<div class="mld-clear-both"></div>
-				</div>
-				<?php
-				if( current_user_can( 'manage_options' ) ) {
-					?>
-					<div class="mld-delete-message" data-id="<?php echo $message_id; ?>"><?php echo __( 'Delete', 'myrtle-learning-dashboard' ); ?></div>
-					<?php
-				}
-			}
-			$l_i_id = isset( $last_index_id->ID ) ? $last_index_id->ID : 0;
-			?>
-			<input type="hidden" class="mld-u_id" value="<?php echo $l_i_id; ?>">
-			<?php
+  // avatar (keep simple; adjust if you have your own avatar function)
+  $avatar_url = get_avatar_url( $doer, array( 'size' => 80 ) );
+  ?>
+  <?php if ( ! $is_me ) : ?>
+    <div class="mld-msg is-left">
+      <img class="mld-msg-av" src="<?php echo esc_url( $avatar_url ); ?>" alt="">
+      <div class="mld-bubble"><?php echo stripslashes( $message_txt ); ?></div>
+    </div>
+  <?php else : ?>
+    <div class="mld-msg is-right">
+      <div class="mld-bubble is-me"><?php echo stripslashes( $message_txt ); ?></div>
+      <img class="mld-msg-av" src="<?php echo esc_url( $avatar_url ); ?>" alt="">
+    </div>
+  <?php endif; ?>
 
-			$content = ob_get_contents();
-			ob_get_clean();
+  <?php
+  if( current_user_can( 'manage_options' ) ) {
+    ?>
+    <div class="mld-delete-message" data-id="<?php echo esc_attr( $message_id ); ?>">
+      <?php echo __( 'Delete', 'myrtle-learning-dashboard' ); ?>
+    </div>
+    <?php
+  }
+}
+$l_i_id = isset( $last_index_id->ID ) ? $last_index_id->ID : 0;
+?>
+<input type="hidden" class="mld-u_id" value="<?php echo esc_attr( $l_i_id ); ?>">
+<?php
+
+$content = ob_get_contents();
+ob_get_clean();
+
 
 			$response['content'] = $content;
 			$response['status'] = 'true';
@@ -491,18 +487,17 @@ class Myrtle_Chat_Template {
 		$response = [];
 
 		if( ! wp_verify_nonce( $_POST['mld_nounce'], 'mld_ajax_nonce' ) ) {
-
+			
 			$response['message'] = __( 'data not found', 'myrtle-learning-dashboard' );
 			$response['status'] = 'false';
-
 			echo json_encode( $response );
 			wp_die();
 		}
 
 		$group_id = isset( $_POST['group_id'] ) ? intval( $_POST['group_id'] ) : 0;
-		$user_id = isset( $_POST['user_id'] ) ? intval( $_POST['user_id'] ) : self::instance()->user_id;
-
-		if( empty( $group_id ) || empty( $user_id ) ) {
+		$chat_type = isset( $_POST['chat_type'] ) ? sanitize_text_field( $_POST['chat_type'] ) : 0;
+		$logged_in_user = get_current_user_id();
+		if( empty( $group_id ) ) {
 			
 			$response['message'] = __( 'data not found', 'myrtle-learning-dashboard' );
 			$response['status'] = 'false';
@@ -511,88 +506,56 @@ class Myrtle_Chat_Template {
 			wp_die();
 		}
 
-		if ( learndash_is_group_leader_user( $user_id ) === true || current_user_can( 'manage_options' ) ) {
-
-			$user_ids = mld_get_group_users( $group_id );
-		} else {
-			$user_ids = mld_get_group_leaders( $group_id );
-		}
-
-		$group_last_message = self::mld_get_last_group_message( 'group', $group_id );
-		
-		$last_message = isset( $group_last_message['last_message'] ) ? $group_last_message['last_message'] : '';
-		$last_message_class = ( '' == $last_message ) ? '' : 'mld-last-message';
-		$last_message_id = isset( $group_last_message['unique_id'] ) ? $group_last_message['unique_id'] : 0;
-		$group_post_thumbnail = get_the_post_thumbnail_url( $group_id );
-
-		if( empty( $group_post_thumbnail ) ) {
-			$group_post_thumbnail = MLD_ASSETS_URL . 'images/profile-img.png';
-		}
+		$user_ids = mld_get_group_users( $group_id );
 
 		ob_start();
-		?>
-		<tr class="mld-single-user-wrap mld-notification-<?php echo $group_id; ?>" data-group_id="<?php echo $group_id; ?>" data-chat_type="group" data-loggin_user="<?php echo $user_id; ?>" data-last_message_id="<?php echo $last_message_id; ?>">
-			<td>
-				<div class="mld-user-wrapper">
-					<div class="mls-user-avatar">
-						<img src="<?php echo $group_post_thumbnail; ?>">
-					</div>
-					<div class="mld-user-message-wrapper <?php echo $last_message_class; ?>">
-						<div class="mld-usrename">
-							<?php echo get_the_title( $group_id ); ?>
-							<span class="dashicons dashicons-image-rotate mld-notification-icon"></span>
-						</div>
-						<div class="mld-group-last-message">
-							<?php echo substr( $group_last_message['last_message'], 0, 22 ); ?>
-						</div>
-					</div>
-					<div class="mld-user-last-login"><?php echo self::$instance->time_elapsed_string( $group_last_message['last_time'] ); ?></div>
-				</div>
-			</td>
-		</tr>
-		<?php
-		foreach( $user_ids as $reciever_id ) {
 
-			if( $user_id == $reciever_id ) {
-				continue;
+		if( ! empty( $user_ids ) && is_array( $user_ids ) ) {
+
+			foreach( $user_ids as $index => $user_id ) {
+
+				$user_id = intval( $user_id );
+				if( ! $user_id ) {
+					continue;
+				}
+
+				$user = get_userdata( $user_id );
+				if( ! $user ) {
+					continue;
+				}
+
+				$user_name = ! empty( $user->display_name ) ? $user->display_name : $user->user_login;
+				$avatar    = get_avatar_url( $user_id, [ 'size' => 80 ] );
+
+				if( empty( $avatar ) ) {
+					$avatar = 'https://i.pravatar.cc/80';
+				}
+
+				$active_class = ( $index === 0 ) ? ' is-active' : '';
+				?>
+				<div class="mld-user-row<?php echo esc_attr( $active_class ); ?>" data-chat-user="<?php echo esc_attr( $user_id ); ?>" data-group-id="<?php echo esc_attr( $group_id ); ?>" data-logged_user="<?php echo esc_attr( $logged_in_user ); ?>" data-chat_type="<?php echo esc_attr( $chat_type ); ?>">
+					<img class="mld-user-avatar" src="<?php echo esc_url( $avatar ); ?>" alt="">
+					<div class="mld-user-meta">
+						<div class="mld-user-name"><?php echo esc_html( $user_name ); ?></div>
+						<div class="mld-user-last">—</div>
+					</div>
+					<div class="mld-user-time">1h</div>
+				</div>
+				<?php
 			}
 
-			$last_message = self::$instance->mld_get_last_message( $reciever_id, $user_id, $group_id, 'general' );
-			$notification_class = 'mld-notification-'.$reciever_id.'-'.$group_id;
-			?>
-			<tr class="mld-single-user-wrap <?php echo $notification_class; ?>" data-group_id="<?php echo $group_id; ?>" data-chat_user="<?php echo $reciever_id; ?>" data-loggin_user="<?php echo $user_id; ?>" data-chat_type="general" data-last_message_id="<?php echo $last_message['unique_id']; ?>">
-				<td>
-					<div class="mld-user-wrapper">
-						<div class="mls-user-avatar mld-group-users" profile-default_src="<?php echo get_avatar_url($user->ID, ['size' => '40'] );?>">
-							<?php
-							echo get_avatar( $reciever_id );
-							?>
-						</div>
-						<div class="mld-user-message-wrapper">
-							<div class="mld-usrename">
-								<?php echo self::$instance->get_user_name( $reciever_id ); ?>
-								<span class="dashicons dashicons-image-rotate mld-notification-icon"></span>
-							</div>
-							<div class="mld-user-last-message">
-								<?php echo substr( $last_message['last_message'], 0, 22 ); ?>
-							</div>
-						</div>
-						<div class="mld-user-last-login"><?php echo self::$instance->time_elapsed_string( $last_message['last_time'] ); ?></div>
-					</div>
-				</td>
-			</tr>
-			<?php
 		}
 
 		$content = ob_get_contents();
 		ob_get_clean();
 
 		$response['content'] = $content;
-		$response['status'] = 'true';
+		$response['status']  = 'true';
 
 		echo json_encode( $response );
 		wp_die();
 	}
+
 
 	/**
 	 * create a function to get group messages
